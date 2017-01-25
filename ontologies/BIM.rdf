@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+  <owl:Ontology rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM">
+    <dc:title>Biomedical Image Ontology (BIM Ontology)</dc:title>
+    <dc:description>BIM is an open biomedical image features ontology, it provides semantic vocabularies to represent the biomedical images and their features. BIM specifically addresses the provenance and crowd image annotation issues during biomedical image manipulation. </dc:description>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-06-07</dc:modified>
+    <vann:preferredNamespaceUri>http://cbakerlab.unbsj.ca/unbvps/BIM#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>BIM</vann:preferredNamespacePrefix>
+    <foaf:page rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM.html"/>
+    <dc:creator rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#ahmadchan"/>
+  </owl:Ontology>
+
+  <foaf:Person rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#ahmadchan">
+    <foaf:nick>ahmadchan</foaf:nick>
+  </foaf:Person>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#BiomedicalImage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>BiomedicalImage</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#Image"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Calcium_imaging">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Calcium_imaging</rdfs:label>
+    <rdfs:comment>Calcium imaging is a scientific technique usually carried out in research which is designed to show the calcium (Ca2+) status of a cell, tissue or medium.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#BiomedicalImage"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Charts">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Charts</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#Image"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Computed_Tomography">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Computed_Tomography</rdfs:label>
+    <rdfs:comment>Computed Tomography (CT), or Computed Axial Tomography (CAT: A CT scan, also known as a CAT scan), is a helical tomography (latest generation), which traditionally produces a 2D image of the structures in a thin section of the body.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#Tomography"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#DNA_Sequence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>DNA_Sequence</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Diffuse_optical_imaging">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Diffuse_optical_imaging</rdfs:label>
+    <rdfs:comment>Diffuse optical imaging (DOI) is a method of imaging using Near Infrared Spectroscopic (NIRS) [1] or Fluorescence based methods.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#BiomedicalImage"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Diffusion-weighted_imaging">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Diffusion-weighted_imaging</rdfs:label>
+    <rdfs:comment>a type of MRI that uses water diffusion</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#Magnetic_Resonance_Imaging"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Echocardiography">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Echocardiography</rdfs:label>
+    <rdfs:comment>Echocardiography allows detailed structures of the heart, including chamber size, heart function, the valves of the heart, as well as the pericardium (the sac around the heart) to be seen.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#BiomedicalImage"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Elastography">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Elastography</rdfs:label>
+    <rdfs:comment>Elastography is a new imaging modality that maps the elastic properties of soft tissue. This modality emerged in the last decade. Elastography can use ultrasound, magnetic resonance imaging and tactile imaging.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#BiomedicalImage"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Fluorescence_lifetime_imaging">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Fluorescence_lifetime_imaging</rdfs:label>
+    <rdfs:comment>using the decay rate of a fluorescent sample</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#BiomedicalImage"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Fluoroscopy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Fluoroscopy</rdfs:label>
+    <rdfs:comment>Fluoroscopy produces real-time images of internal structures of the body in a similar fashion to radiography, but employs a constant input of x-rays, at a lower dose rate</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#Radiography"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Functional_near-infrared_spectroscopy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Functional_near-infrared_spectroscopy</rdfs:label>
+    <rdfs:comment>FNIR Is a relatively new non-invasive imaging technique. NIRS (near infrared spectroscopy) is used for the purpose of functional neuroimaging and has been widely accepted as a brain imaging technique</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#BiomedicalImage"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Gallium_imaging">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Gallium_imaging</rdfs:label>
+    <rdfs:comment>a nuclear medicine method for the detection of infections and cancers</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#Nuclear_Imaging"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Graph">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Graph</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#Image"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#HmmerSearch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>HmmerSearch</rdfs:label>
+    <rdfs:comment> used to search one or more profiles against a protein sequence database. </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceAnalysisTools"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Hmmscan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Hmmscan</rdfs:label>
+    <rdfs:comment>search protein sequences against collections of profiles, e.g. Pfam. In HMMER2 this was called hmmpfam.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceAnalysisTools"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Image">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Image</rdfs:label>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Imaging_agent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Imaging_agent</rdfs:label>
+    <rdfs:comment>a chemical designed to allow clinicians to determine whether a mass is benign or malignant</rdfs:comment>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#JackHmmer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>JackHmmer</rdfs:label>
+    <rdfs:comment>iteratively search a query protein sequence, multiple sequence alignment or profile HMM against the target protein sequence database.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceAnalysisTools"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Linear_tomography">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Linear_tomography</rdfs:label>
+    <rdfs:comment>This is the most basic form of tomography. The X-ray tube moved from point &quot;A&quot; to point &quot;B&quot; above the patient, while the cassette holder (or &quot;bucky&quot;) moves simultaneously under the patient from point &quot;B&quot; to point &quot;A.&quot; </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#Tomography"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Magnetic_Resonance_Imaging">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Magnetic_Resonance_Imaging</rdfs:label>
+    <rdfs:comment>A magnetic resonance imaging instrument (MRI scanner), or &quot;nuclear magnetic resonance (NMR) imaging&quot; scanner as it was originally known, uses powerful magnets to polarise and excite hydrogen nuclei (single proton) in water molecules in human tissue, producing a detectable signal which is spatially encoded, resulting in images of the body.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#BiomedicalImage"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Microscopy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Microscopy</rdfs:label>
+    <rdfs:comment>creating images of objects or features too small to be detectable by the naked human eye</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#BiomedicalImage"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Molecular_imaging">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Molecular_imaging</rdfs:label>
+    <rdfs:comment>used to study molecular pathways inside organisms</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#BiomedicalImage"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Nuclear_Imaging">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Nuclear_Imaging</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#BiomedicalImage"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Optical_imaging">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Optical_imaging</rdfs:label>
+    <rdfs:comment>a technique to allow cognitive neuroscientists to &quot;see&quot; brain activity</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#BiomedicalImage"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Optoacoustic_imaging">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Optoacoustic_imaging</rdfs:label>
+    <rdfs:comment>using the photothermal effect, for the accuracy of spectroscopy with the depth resolution of ultrasound</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#BiomedicalImage"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Phmmer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Phmmer</rdfs:label>
+    <rdfs:comment>used to search one or more query protein sequences against a protein sequence database.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceAnalysisTools"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Photoacoustic_imaging">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Photoacoustic_imaging</rdfs:label>
+    <rdfs:comment>Photoacoustic imaging is a recently developed hybrid biomedical imaging modality based on the photoacoustic effect. It combines the advantages of optical absorption contrast with ultrasonic spatial resolution for deep imaging in (optical) diffusive or quasi-diffusive regime.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#BiomedicalImage"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Poly_tomography">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Poly_tomography</rdfs:label>
+    <rdfs:comment>This was a complex form of tomography. With this technique, a number of geometrical movements were programmed, such as hypocycloidic, circular, figure 8, and elliptical.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#Tomography"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Positron_Emission_Tomography">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Positron_Emission_Tomography</rdfs:label>
+    <rdfs:comment>Positron emission tomography also used in conjunction with computed tomography, PET-CT, and magnetic resonance imaging PET-MRI.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#Tomography"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Positron_Tmission_Tomography">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Positron_Tmission_Tomography</rdfs:label>
+    <rdfs:comment>Positron emission tomography (PET) uses coincidence detection to image functional processes.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#Nuclear_Imaging"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Projectional_radiographs">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Projectional_radiographs</rdfs:label>
+    <rdfs:comment>Projectional radiographs, more commonly known as x-rays, are often used to determine the type and extent of a fracture as well as for detecting pathological changes in the lungs</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#Radiography"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Protein_Sequence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Protein_Sequence</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Radiography">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Radiography</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#BiomedicalImage"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#SPECT">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>SPECT</rdfs:label>
+    <rdfs:comment>SPECT is a 3D tomographic technique that uses gamma camera data from many projections and can be reconstructed in different planes. </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#Nuclear_Imaging"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#ScientificDocument">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>ScientificDocument</rdfs:label>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Scintigraphy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Scintigraphy</rdfs:label>
+    <rdfs:comment>Scintigraphy (&quot;scint&quot;) is a form of diagnostic test wherein radioisotopes are taken internally, for example intravenously or orally.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#Nuclear_Imaging"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceAnalysisTools">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>SequenceAnalysisTools</rdfs:label>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>SequenceImage</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#BiomedicalImage"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImageOCR">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>SequenceImageOCR</rdfs:label>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Tactile_imaging">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Tactile_imaging</rdfs:label>
+    <rdfs:comment>Tactile imaging is a medical imaging modality that translates the sense of touch into a digital image. </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#BiomedicalImage"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Thermography">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Thermography</rdfs:label>
+    <rdfs:comment>Basically used for the breast imaging. There are three approaches: the tele-thermography, the contact thermography and the dynamic angiothermography. </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#BiomedicalImage"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Tomography">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Tomography</rdfs:label>
+    <rdfs:comment>Tomography is the method of imaging a single plane, or slice, of an object resulting in a tomogram. </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#BiomedicalImage"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Ultrasound">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Ultrasound</rdfs:label>
+    <rdfs:comment>Medical ultrasonography uses high frequency broadband sound waves in the megahertz range that are reflected by tissue to varying degrees to produce (up to 3D) images. </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#BiomedicalImage"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#X-ray_computed_tomography">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>X-ray_computed_tomography</rdfs:label>
+    <rdfs:comment>X-ray computed tomography (x-ray CT) is a technology that uses computer-processed x-rays to produce tomographic images (virtual 'slices') of specific areas of the scanned object, allowing the user to see inside without cutting.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#Tomography"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Zonography">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Zonography</rdfs:label>
+    <rdfs:comment>This is a variant of linear tomography, where a limited arc of movement is used. It is still used in some centres for visualising the kidney during an intravenous urogram (IVU).</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#Tomography"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#swissProt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>swissprot</rdfs:label>
+    <rdfs:comment>UniProtKB/Swiss-Prot is the manually annotated and reviewed section of the UniProt Knowledgebase (UniProtKB).
+</rdfs:comment>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#EuropePMCSpecies">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>EuropePMCSpecies</rdfs:label>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Disease">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Disease</rdfs:label>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#ChebiDict">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>ChebiDict</rdfs:label>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#Drugs">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>Drugs</rdfs:label>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#SwissProtGo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>SwissProtGo</rdfs:label>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#SwissProt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>SwissProt</rdfs:label>
+  </rdfs:Class>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#abstract">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>abstract</rdfs:label>
+    <rdfs:comment>Abstract of scientific artcile</rdfs:comment>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#ScientificDocument"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#caption">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>caption</rdfs:label>
+    <rdfs:comment>Caption of a figure</rdfs:comment>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#Image"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#doi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>doi</rdfs:label>
+    <rdfs:comment>Document Identification of a scientific docuemnt</rdfs:comment>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#ScientificDocument"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#filename">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>filename</rdfs:label>
+    <rdfs:comment>PubMed Image file name, example  1471-2164-3-4-1</rdfs:comment>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#fulltext">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>fulltext</rdfs:label>
+    <rdfs:comment>Full text of a pubmed Article</rdfs:comment>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#hmmScanBitscore">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>hmmScanBitscore</rdfs:label>
+    <rdfs:comment>A bit score in HMMER is the log of the ratio of the sequence's probability according to the profile (the homology hypothesis) to the null model probability (the non-homology hypothesis).</rdfs:comment>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#hmmScanCevalue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>hmmScanCevalue</rdfs:label>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#hmmScanDescription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>hmmScanDescription</rdfs:label>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#hmmScanFamily_Accession">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>hmmScanFamily_Accession</rdfs:label>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#hmmScanFamily_Id">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>hmmScanFamily_Id</rdfs:label>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#hmmScanID">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>hmmScanID</rdfs:label>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#hmmScanIevalue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>hmmScanIevalue</rdfs:label>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#hmmScanclan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>hmmScanclan</rdfs:label>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#hmmScanseqEND">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>hmmScanseqEND</rdfs:label>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#hmmScanseqStart">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>hmmScanseqStart</rdfs:label>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#imagId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>imagId</rdfs:label>
+    <rdfs:comment>Every Image embeded inside a scientific publication has a unique id and could be retrived from PubMed based on that. Example PMC100357/1471-2164-3-4-1</rdfs:comment>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#Image"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#imageLabel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>imageLabel</rdfs:label>
+    <rdfs:comment>Image Number/Label of an image inside a scientific publication. Like Figure 1</rdfs:comment>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#Image"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#imageOCR">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>imageOCR</rdfs:label>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#Image"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#imageType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>imageType</rdfs:label>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#Image"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#pHmmerScanDescription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>pHmmerScanDescription</rdfs:label>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#pHmmerScanKingdom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>pHmmerScanKingdom</rdfs:label>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#pHmmerScanSpecies">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>pHmmerScanSpecies</rdfs:label>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#pHmmerScanTarget">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>pHmmerScanTarget</rdfs:label>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#pHmmerScanbitscore">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>pHmmerScanbitscore</rdfs:label>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#pHmmerScanid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>pHmmerScanid</rdfs:label>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#pHmmerScanvalue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>pHmmerScanvalue</rdfs:label>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#pmcid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>pmcid</rdfs:label>
+    <rdfs:comment>PubMed Central Identifier of a scientific docuemnt.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#ScientificDocument"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#pmid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>pmid</rdfs:label>
+    <rdfs:comment>PubMed Identifier of a scientific docuemnt</rdfs:comment>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#ScientificDocument"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#prosite_id">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>prosite_id</rdfs:label>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#prosite_level">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>prosite_level</rdfs:label>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#prosite_score">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>prosite_score</rdfs:label>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#prosite_sequence_acsession">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>prosite_sequence_acsession</rdfs:label>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#prosite_signature_ac">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>prosite_signature_ac</rdfs:label>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#prosite_start">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>prosite_start</rdfs:label>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#prosite_stop">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>prosite_stop</rdfs:label>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#SequenceImage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>title</rdfs:label>
+    <rdfs:comment>Title of an image,</rdfs:comment>
+    <rdfs:domain rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM#Image"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#hasImageOCR">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>hasImageOCR</rdfs:label>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#hasSequenceType">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>hasSequenceType</rdfs:label>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#scanprosite">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>scanprosite</rdfs:label>
+    <rdfs:comment>Sequences to scan them against the PROSITE collection of motifs</rdfs:comment>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#prosite_filename">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>prosite_filename</rdfs:label>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#swissprot_annotation">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>swissprot_annotation</rdfs:label>
+    <rdfs:comment>swiss prot annotation extracted by the protein NLP tagger from image caption</rdfs:comment>
+    <rdfs:comment>SwissProt annotation generated through NLP web services </rdfs:comment>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#annotation_start">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>annotation_start</rdfs:label>
+    <rdfs:comment>Beginning of annotation</rdfs:comment>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#annotation_end">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>annotation_end</rdfs:label>
+    <rdfs:comment>End of annotation</rdfs:comment>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#swissprot_ids">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>swissprot_ids</rdfs:label>
+    <rdfs:comment>Unique identifier of UniProtKB/Swiss-Prot database</rdfs:comment>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#swissprotgo_annotation">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>swissprotgo_annotation</rdfs:label>
+    <rdfs:comment>SwissProt GO annotation generating through text mining algorithm</rdfs:comment>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#swissprotgo_type">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>swissprotgo_type</rdfs:label>
+    <rdfs:comment>SwissProt annotation type</rdfs:comment>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#swissprotgo_ids">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>swissprotgo_ids</rdfs:label>
+    <rdfs:comment>Unique ID of Go and SwissProt Terminology</rdfs:comment>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#drugID">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>drugID</rdfs:label>
+    <rdfs:comment>Unique drug identification number</rdfs:comment>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#drugCategory">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>drugCategory</rdfs:label>
+    <rdfs:comment>Drug Category</rdfs:comment>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#drugName">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>drugName</rdfs:label>
+    <rdfs:comment>Drug Name</rdfs:comment>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#chebiDictID">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>chebiDictID</rdfs:label>
+    <rdfs:comment>Unique Identifier Chemical Entity Recognition of ChEBI
+</rdfs:comment>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#ChebiDictTerms">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>ChebiDictTerms</rdfs:label>
+    <rdfs:comment>ChEBI Terminologies
+</rdfs:comment>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#diseaseID">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>diseaseID</rdfs:label>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#diseaseName">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>diseaseName</rdfs:label>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#europepmcspecies_id">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>europepmcspecies_id</rdfs:label>
+    <rdfs:comment>Species ID from European PMC species database</rdfs:comment>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#europePmcSpeciesName">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>europePmcSpeciesName</rdfs:label>
+    <rdfs:comment>Species name from european PMC species database</rdfs:comment>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#europePmcSpeciesClass">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>europePmcSpeciesClass</rdfs:label>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#swissprotgo">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>swissprotgo</rdfs:label>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#drugs">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>drugs</rdfs:label>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#chebidict">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>chebidict</rdfs:label>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://cbakerlab.unbsj.ca/unbvps/BIM#europepmcspecies">
+    <rdfs:isDefinedBy rdf:resource="http://cbakerlab.unbsj.ca/unbvps/BIM"/>
+    <rdfs:label>europepmcspecies</rdfs:label>
+  </rdf:Property>
+
+</rdf:RDF>

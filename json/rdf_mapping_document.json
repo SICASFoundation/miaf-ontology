@@ -1,0 +1,109 @@
+{
+  "namespaces": {
+    "smir": "https://www.smir.ch/api/",
+    "miaf": "http://www.virtualskeleton.ch/MIAF.owl#",
+    "dcterm": "http://purl.org/dc/terms/",
+    "bim2": "http://cbakerlab.unbsj.ca:8080/ontologies/BIM.owl",
+    "dct": "http://purl.org/dc/dcmitype/",
+    "uberon": "http://purl.obolibrary.org/obo/uberon/core#",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+
+  },
+  "map": {
+    "miaf:s_object_uri": "smir:objects/{id}", //all
+    "miaf:o_object_rdf_type": "miaf:object", //all
+    "miaf:p_object_id": "dcterm:identifier", //all 
+    "miaf:p_object_title": "dcterm:title", //collection
+    "miaf:p_object_type": "miaf:object_type", //all
+    "miaf:p_object_created_date": "dcterm:created", //all
+    "miaf:p_object_modified_date": "dcterm:modified", //all
+    "miaf:p_object_name": "rdfs:label", //all 
+    "miaf:p_object_description": "dcterm:description", //all
+    "miaf:p_object_extension": "miaf:extension", //all
+    "miaf:p_object_size": "miaf:object_size", //all
+    "miaf:p_object_file": "miaf:object_file", //all
+    "miaf:p_object_file_count": "miaf:object_file_count", //all
+	"miaf:p_object_related": "miaf:object_related", //all
+    "miaf:p_object_anatomical_region": "miaf:anatomical_region", //raw, seg, sm, surf
+    "miaf:p_object_segmentation_method_description": "miaf:segmentation_method_description", //seg
+    "miaf:p_object_uid": "miaf:uid", //raw
+    "miaf:p_object_acquisition_year": "miaf:acquisition_year", //raw
+    "miaf:p_object_image_number": "miaf:image_number", //raw, seg
+    "miaf:p_object_slice_thickness": "miaf:raw_image_slice_thickness", // raw, seg
+    "miaf:p_object_space_between_slices": "miaf:raw_space_between_slices", //raw, seg
+    "miaf:p_object_kvp": "miaf:kvp", //raw
+    "miaf:p_object_iid": "miaf:iid", //gpl, gsm, gse
+    "miaf:p_object_title_immutable": "miaf:immutable_title",//gpl, gsm, gse, study def (name), 
+    "miaf:p_object_distribution": "miaf:distribution", //gpl, study def, 
+    "miaf:p_object_microarray_technology": "miaf:microarry_technology", //gpl
+    "miaf:p_object_manufacturer": "miaf:manufacturer", //gpl
+    "miaf:p_object_manufactur_protocol": "miaf:protocol", //gpl
+    "miaf:p_object_description_immutable": "miaf:immutable_description", //gsm, study def
+    "miaf:p_object_channel_count": "miaf:channel_count", //gsm
+    "miaf:p_object_data_processing": "miaf:data_processing", //gsm
+    "miaf:p_object_immutable_abstract": "miaf:immutable_abstract", // was summary, gse
+    "miaf:p_object_genomic_series_type": "miaf:series_type", //gse
+    "miaf:p_object_genomic_series_overall_design": "miaf:overall_design", //gse
+    "miaf:p_object_uid": "miaf:uid", //study, subject
+    "miaf:p_object_age": "miaf:subject_snapshot_age", //subject, raw
+    "miaf:p_object_body_temperature": "miaf:body temperature", //subject, raw
+    "miaf:p_object_body_height": "miaf:body_height", //subject, raw
+    "miaf:p_object_body_weight": "miaf:body_weight", // subject, raw
+    "miaf:p_object_subject_key": "miaf:subject_key", //study def
+    "miaf:p_object_oid": "miaf:oid", //study def
+    "miaf:p_object_protocol_name": "miaf:protocol_name", //study def
+    "miaf:p_object_metadata_version_oid": "miaf:metadata_version_oid", //study def
+    "miaf:p_object_metadata_version_name": "miaf:metadata_version_name", //study def
+    "miaf:p_object_vertex_count": "miaf:surface_model_vertex_count", //sm
+    "miaf:p_object_min_x": "miaf:surface_model_min_x",//sm
+    "miaf:p_object_max_x": "miaf:surface_model_max_x",//sm
+    "miaf:p_object_min_y": "miaf:surface_model_min_y",//sm
+    "miaf:p_object_max_y": "miaf:surface_model_max_y",//sm
+    "miaf:p_object_min_z": "miaf:surface_model_min_z",//sm
+    "miaf:p_object_max_z": "miaf:surface_model_max_z",//sm
+    "miaf:p_object_owner": "miaf:rightsHolder", //all
+
+    "miaf:s_file_uri": "smir:files/{id}", //all
+    "miaf:o_file_rdf_type": "miaf:file", //all
+    "miaf:p_file_id": "miaf:id", //all
+    "miaf:p_file_type": "dct:Format", //all what is this? no clear what to map (mime types)
+    "miaf:p_file_format": "miaf:file_format",
+    "miaf:p_file_created_date": "dcterm:created",
+    "miaf:p_file_modified_date": "dcterm:modified",
+    "miaf:p_file_extension": "miaf:file name extension",
+    "miaf:p_file_hashcode": "miaf:hashvalue",
+    "miaf:p_file_anonymized_hashcode": "miaf:anonymized_hashvalue",
+    "miaf:p_file_number": "miaf:file_number",
+
+    "miaf:s_user_uri": "smir:users/{id}",
+    "miaf:o_user_rdf_type": "miaf:user",
+    "miaf:p_user_id": "miaf:id",
+    "miaf:p_user_username": "miaf:username",
+    "miaf:p_user_firstname": "miaf:firstname",
+    "miaf:p_user_lastname": "miaf:lastname",
+    "miaf:p_user_email": "miaf:email",
+    "miaf:p_user_status": "miaf:Status",
+    "miaf:p_user_title": "miaf:salutation title",
+
+    "miaf:p_object_dataset_type": "miaf:dataset_type",
+    "miaf:p_object_data_format": "miaf:file_format",
+    "miaf:p_object_segmentation_method": "miaf:segmentation_method",
+    "miaf:p_object_modality": "miaf:modality",
+    "miaf:p_object_license": "dcterm:license",
+    "miaf:p_object_gender": "miaf:gender",
+    "miaf:p_object_dominance": "miaf:dominant_side",
+    "miaf:p_object_slice_orientation": "miaf:slice_orientation",
+    "miaf:p_object_organism": "miaf:Organism",
+    "miaf:p_object_ethnic_group": "miaf:ethnicity",
+    "miaf:p_object_echo time": "miaf:echo time",
+    "miaf:p_object_mr_image_sequence_acronym": "miaf:mri_sequence_acronym",
+    "miaf:p_object_mr_image_contrast": "miaf:mri_contrast",
+    ""
+  }
+}

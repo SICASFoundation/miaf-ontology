@@ -1,0 +1,50 @@
+{
+  "@context":
+  {
+    "@language":"en",
+    "@base":"https://www.smir.ch/api/",
+    "schema": "http://schema.org/"
+  },
+  
+  "@type":"schema:Dataset",
+  "@id":"objects/2",
+  "schema:name":"VSD.Lower_limb.089Y.M.CT.2.000.dcm",
+  "schema:about":
+  [
+  {
+    "@type":"schema:Thing",
+    "schema:name":"Lower limb",
+    "@id":"http://purl.org/sig/ont/fma/fma_128981"
+  },
+  {
+    "@type":"schema:Thing",
+    "schema:name":"Leg",
+    "@id":"http://purl.org/sig/ont/fma/fma_9117"
+  }
+  ],
+  "schema:description":"description from SMIR",
+  "schema:keywords": ["Lower limb", "89y", "male", "CT"],
+  "schema:license":"http://createivecommonsetc.com",
+  "schema:fileFormat":"https://www.iana.org/assignments/media-types/media-types.xhtml",
+  "schema:fileFormat":"application/dicom",
+  "schema:url":"https://www.smir.ch/api/objects/2",
+  "schema:dateCreated":"2016-07-21",
+  "schema:aggregateRating":
+  {
+    "@type": "schema:AggregateRating",
+    "schema:ratingValue":"4",
+    "schema:ratingCount":"4"
+  },
+  "schema:distribution":
+  {
+    "@type":"schema:DataDownload",
+    "schema:contentUrl":"https://www.smir.ch/api/objects/2/download"
+    
+  },
+  "schema:publisher":
+  {
+    "@type":"schema:Organization",
+    "schema:name":"SMIR, SICAS Medical Image Repository",
+    "schema:url": "https://www.smir.ch"
+  }
+}

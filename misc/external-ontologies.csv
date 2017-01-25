@@ -1,0 +1,37 @@
+predix,direct url,abbreviation,name,format,date,bioontology,OLS,homepage
+http://qudt.org/1.1/vocab/unit ,http://qudt.org/1.1/vocab/unit,QUDT,"Quantity, Unit, Dimension and Type",rdf,6.6.2016,http://purl.bioontology.org/ontology/QUDT ,no,
+http://semanticscience.org/resource/,http://semanticscience.org/ontology/sio.owl,SIO,semanticscience integrate ontology (sio),owl,6.6.2016,http://purl.bioontology.org/ontology/SIO ,no,
+http://xmlns.com/foaf/0.1/,http://xmlns.com/foaf/spec,FOAF,Friend of a Friend,,6.6.2016,no,no,
+http://purl.org/sig/ont/fma/,http://sig.biostr.washington.edu/share/downloads/fma/release/latest/fma.zip,FMA,FMA,owl,30.4.2016,http://purl.bioontology.org/ontology/FMA ,https://www.ebi.ac.uk/ols/ontologies/fma,has to be defered
+http://edamontology.org/,http://edamontology.org/EDAM.owl,EDAM,"Bioinformatics operations, data types, formats, identifiers and topics EDAM",owl,6.6.2016,http://purl.bioontology.org/ontology/EDAM ,https://www.ebi.ac.uk/ols/ontologies/edam,
+,http://dublincore.org/schemas/rdfs/,DC,"dublin core: terms, types",rdf,6.6.2016,http://purl.bioontology.org/ontology/ERO ,,
+http://purl.obolibrary.org/obo/ERO_,https://www.eagle-i.net/ero/latest/ero.owl,ERO,eagle-i resource ontology  (ERO),,30.6.2015,http://purl.bioontology.org/ontology/ERO ,https://www.ebi.ac.uk/ols/ontologies/ero,
+,https://github.com/pato-ontology/pato,PATO,PATO - the Phenotype And Trait Ontology,,15.5.2016,,https://www.ebi.ac.uk/ols/ontologies/pato,
+,http://www.ihtsdo.org/snomed-ct,SNOMEDCT,Systematized Nomenclature of Medicine - Clinical Terms snowmedCT,online only,no download,http://purl.bioontology.org/ontology/SNOMEDCT ,,
+,http://vocab.org/review/,Review Vocab,Review Vocab (,"rdf, online",,,,
+,http://cbakerlab.unbsj.ca/unbvps/BIM.rdf,BIM,BIM: Biomedical Image Ontology,rdf,03.02.2015,http://bioportal.bioontology.org/ontologies/BIM,,https://sites.google.com/site/bimontology/
+,http://data.bioontology.org/ontologies/BIRNLEX/submissions/1/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb,BRINLEX,Biomedical Informatics Research Network Project Lexicon ,owl,,,,http://xwiki.nbirn.net:8080/xwiki/bin/view/%20BIRN-OTF-Public/Home 
+,http://evs.nci.nih.gov/ftp1/NCI_Thesaurus/,NCI,NCI Thesaurus,owl,42494,,,https://ncim.nci.nih.gov/ncimbrowser/
+,http://purl.org/NET/rdflicense,RDFLicense,RDF Licenses,rdf,,http://purl.bioontology.org/ontology/BIRNLEX ,,
+,http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mr-dataset-acquisition.owl,MR-DA-ON,Magnetic Resonance Dataset Acquisition Ontology ,owl,2014,http://purl.bioontology.org/ontology/ONL-MR-DA ,,
+,http://purl.obolibrary.org/obo/uberon.owl ,UBERON,Uberon,owl,42501,http://purl.bioontology.org/ontology/UBERON ,,https://uberon.github.io/
+,from bioportal,SEDI,Semantic DICOM Ontology ,owl,42165,http://purl.bioontology.org/ontology/SEDI ,,
+,https://www.w3.org/ns/odrl/2/ODRL21.html,ODRL,The Open Digital Rights Language (ODRL) ,rdf,,,,
+,http://purl.obolibrary.org/obo/obi.owl,OBI,Ontology for Biomedical Investigation ,owl,2015-07-12,,,http://purl.obolibrary.org/obo/obi 
+,http://vocab.org/open/terms.rdf,,open vocab,,,,,http://vocab.org/open/
+,from bioportal ?,CSP,Computer Retrieval of Information on Scientific Projects Thesaurus ,rdf/ttl,06/09/15,http://purl.bioontology.org/ontology/CRISP ,,https://uts.nlm.nih.gov/license.html 
+,,CMO,Clinical Measurement Ontology ,,,http://purl.bioontology.org/ontology/CMO ,,ftp://ftp.rgd.mcw.edu/pub/ontology/clinical_measurement/clinical_measurement.obo 
+,,,,,,,,
+,OTHERS,,,,,,,
+,http://ontology.neuinfo.org/NIF/,NIF,"successor of BIRNLEX,, Neuroscience information framework",owl,,,,
+,www.w3.org/2006/vcard/ns.rdf,vCard,vCard w3c,rdf,,,,https://www.w3.org/2006/vcard/ns-2006.html
+,,EDDA Study Design Terminology ,,,,,,
+,from bioportal,DCM,dicom controlled terminology,,,http://purl.bioontology.org/ontology/DCM ,,http://dicom.nema.org/medical/dicom/current/output/chtml/part16/chapter_D.html
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,Search Engines,,,,,,,
+,https://www.ebi.ac.uk/ols/ontologies/obi/index,OLS Lookup,,,,,,
+,http://aber-owl.net/,Bioportal,,,,,,
+,http://bioportal.bioontology.org/ontologies,AberOWL Portal,,,,,,

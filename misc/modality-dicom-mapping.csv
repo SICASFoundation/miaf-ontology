@@ -1,0 +1,11 @@
+SMIR label,abbreviation,label,iri
+MR,MRI,'Magnetic resonance imaging' ,<http://cbakerlab.unbsj.ca:8080/sebi/BIM.owl#Magnetic_resonance_imaging>
+NM,NI,'Nuclear imaging' ,<http://cbakerlab.unbsj.ca:8080/sebi/BIM.owl#Nuclear_imaging>
+PT,PET,'Positron emission tomography' ,<http://cbakerlab.unbsj.ca:8080/sebi/BIM.owl#Positron_emission_tomography>
+RG,Xray,'Projectional radiographs' ,<http://cbakerlab.unbsj.ca:8080/sebi/BIM.owl#X-Ray>
+ST,SPECT,'Single-photon emission computed tomography' ,<http://cbakerlab.unbsj.ca:8080/sebi/BIM.owl#Single-photon_emission_computed_tomography_(SPECT)>
+CR,Xray-CT,'X-ray computed tomography' ,<http://cbakerlab.unbsj.ca:8080/sebi/BIM.owl#X-ray_computed_tomography>
+CT,CT,Computed_tomography ,<http://cbakerlab.unbsj.ca:8080/sebi/BIM.owl#Computed_tomography>
+ECG,ECG,Echocardiography,<http://cbakerlab.unbsj.ca:8080/sebi/BIM.owl#Echocardiography>
+GM,Microscopy,Microscopy,<http://cbakerlab.unbsj.ca:8080/sebi/BIM.owl#Microscopy>
+US,US,Ultrasound ,<http://cbakerlab.unbsj.ca:8080/sebi/BIM.owl#Ultrasound >

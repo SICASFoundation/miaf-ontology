@@ -1,0 +1,24 @@
+SMIR ,Abbreviation,Label,IRI
+CBF,CBF,'Cerebral Blood Flow' ,http://www.virtualskeleton.ch/MIAF.owl#3fbed1b6_faa6_441b_972f_980179a188a8
+CBV,CBV,'Cerebral Blood Volume' ,http://www.virtualskeleton.ch/MIAF.owl#d3007ee5_e62c_4001_ada6_d3f45b2a6712
+DT-FA,DTI-FA,'Diffusion Tensor Imaging Frational Anisotropy' ,http://www.virtualskeleton.ch/MIAF.owl#c5743501_820d_48d1_8322_93320e074b6c
+DT-MD,DTI-MD,'Diffusion Tensor Imaging Mean Diffusivity',http://www.virtualskeleton.ch/MIAF.owl#6ef34d08_fa6b_4d81_b567_552d18db28f2
+DWI,DWI,'Diffusion Weighted Imaging' ,http://www.virtualskeleton.ch/MIAF.owl#6049e435_2d5b_4552_9474_4e061141a720
+FLAIR,FLAIR,'FLuid Attenuated Inversion Recovery' ,http://www.virtualskeleton.ch/MIAF.owl#7c0699fa_a744_4903_a107_a945fa8977fc
+GM-prob,GM-prob,'Probabilistic gray matter map' ,http://www.virtualskeleton.ch/MIAF.owl#4c6c5a4b_4d9f_43a8_a3e6_2cb8a3ddceac
+T1,T1,'T1 weighted imaging' ,http://www.virtualskeleton.ch/MIAF.owl#2b945d33_4f17_412c_9c89_03d038946881
+T1-FFE,T1-FFE,'T1 weighted Fast Field Echo' ,http://www.virtualskeleton.ch/MIAF.owl#9dce4909_43e6_40b1_9339_38883f96c220
+T1-TFE,T1-TFE,'T1-weighted Turbo Field Echo',http://www.virtualskeleton.ch/MIAF.owl#5aacae40_6963_493d_ad57_cd29b12f3944
+T1c,T1-c (contrast),'T1 contrast' ,<http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mr-dataset-acquisition.owl#T1-contrast>
+T2,T2,'T2 weighted imaging',http://www.virtualskeleton.ch/MIAF.owl#60bbf6f8_9722_4b9c_bc78_569e298979fb
+T2-FFE,T2-FFE,'T2-weighted Fast Field Echo' ,http://www.virtualskeleton.ch/MIAF.owl#cab7eb88_d927_4003_b504_6ffec4a5f79c
+T2-TSE,T2-TSE,‘T2 weighted Turbo Spin Echo’,http://www.virtualskeleton.ch/MIAF.owl#78ae540f_8dcf_4d5e_aed8_8dc7e9bf47cd
+T2f,T2f,'T2-fast weighted imaging' ,http://www.virtualskeleton.ch/MIAF.owl#089a689e_e6c1_4daa_a3fd_2ae7cc685b75
+Tmax,TTP=Tmax,'Time To Max' ,http://www.virtualskeleton.ch/MIAF.owl#08105d92_7b5f_4175_8e12_0d7f4b9fc224
+TTP,TTP,'Time To Peak' ,http://www.virtualskeleton.ch/MIAF.owl#fd2ca316_96a0_4ad7_bf2f_448e791cfe09
+WM-prob,WM-prob,'Probabilistic white matter map' ,http://www.virtualskeleton.ch/MIAF.owl#8ad1c395_5042_4fb6_92f0_42a09e3b6c07
+rCBF,rCBF,'Relative Cerebral Blood Flow',http://www.virtualskeleton.ch/MIAF.owl#5e5fbf9e_50a0_45ea_829d_94fd0d3a4a9c
+rCBV,rCBV,'Relative Cerebral Blood Volume',http://www.virtualskeleton.ch/MIAF.owl#3a8c307c_61a1_4848_92d7_609c78c52c17
+MTT,MTT,mean transient time,http://www.virtualskeleton.ch/MIAF.owl#fa71c873_5759_4f6c_8b92_f99af60dab54
+ADC,ADC,apparent diffusin coeffient Map,http://www.virtualskeleton.ch/MIAF.owl#cb611af5_1e2c_4fac_afd6_9688aa2472e3
+4DPWI,4D-PWI,4D perfusion weighted imaging,http://www.virtualskeleton.ch/MIAF.owl#b05713e9_d978_44bd_9838_b6a4306ea51b

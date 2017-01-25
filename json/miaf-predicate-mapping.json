@@ -1,0 +1,424 @@
+{
+  "head": {
+    "vars": [ "pURI" , "pLabel" , "mURI" , "mLabel" ]
+  } ,
+  "results": {
+    "bindings": [
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#e9c26f78_a2c5_4193_a593_47e73c9371bb" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_file_extension" } ,
+        "mURI": { "type": "uri" , "value": "http://edamontology.org/data_1059" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#57930446_dc48_4445_9615_d0e08f3a7dac" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_extension" } ,
+        "mURI": { "type": "uri" , "value": "http://edamontology.org/data_1059" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#5de5c162_7c91_469b_9fd6_70508ed7d78d" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_distribution" } ,
+        "mURI": { "type": "uri" , "value": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45273" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#bc3c1690_bace_48b3_9ed3_c1d5c9e2b7ad" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_kvp" } ,
+        "mURI": { "type": "uri" , "value": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48432" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#cd338452_5175_4a67_9ae0_1cdc799b19b4" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_file_hashcode" } ,
+        "mURI": { "type": "uri" , "value": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C68725" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#d23a5455_4b7c_4d81_945d_9fdc2bd0e986" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_oid" } ,
+        "mURI": { "type": "uri" , "value": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69405" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#aa375ec2_c2f7_4da8_8d13_6b49860f6d7e" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_uid" } ,
+        "mURI": { "type": "uri" , "value": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70663" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#43005433_478d_4e92_a3e2_dc408f3ac786" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_echo_time" } ,
+        "mURI": { "type": "uri" , "value": "http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mr-dataset-acquisition.owl#echo-time" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#8556dc06_c1e5_48e5_91bb_a67c4cc775ce" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_slice_orientation" } ,
+        "mURI": { "type": "uri" , "value": "http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mr-dataset-acquisition.owl#slice-orientation-at-acquisition" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#d512a1b7_5aca_43a3_968e_a5636feb9259" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_space_between_slices" } ,
+        "mURI": { "type": "uri" , "value": "http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mr-dataset-acquisition.owl#slice-spacing" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#b4ef0307_69a3_4564_9894_bd89dd735ac5" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_slice_thickness" } ,
+        "mURI": { "type": "uri" , "value": "http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mr-dataset-acquisition.owl#slice-thickness" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#b04c744e_0195_485a_85bf_db957c7558a5" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_body_weight" } ,
+        "mURI": { "type": "uri" , "value": "http://purl.bioontology.org/ontology/CSP/0467-2841" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#2b02e400_9889_4ca7_afa8_0ab56baf754f" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_body_temperature" } ,
+        "mURI": { "type": "uri" , "value": "http://purl.bioontology.org/ontology/CSP/2871-4249" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#da2e64a6_2305_4c3a_a4ba_51247ca79eb4" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_body_height" } ,
+        "mURI": { "type": "uri" , "value": "http://purl.bioontology.org/ontology/CSP/4001-0017" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#4507c737_7bf6_4668_bd59_1b4dbce2b222" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_technology" } ,
+        "mURI": { "type": "uri" , "value": "http://purl.bioontology.org/ontology/CSP/5000-0010" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#9d340f4a_24a1_409b_8e2d_80a52fff3cce" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_manufacture_protocol" } ,
+        "mURI": { "type": "uri" , "value": "http://purl.obolibrary.org/obo/OBI_0000272" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#55fae296_f6c9_438e_a129_d1cbbc4bcbdb" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_manufacturer" } ,
+        "mURI": { "type": "uri" , "value": "http://purl.obolibrary.org/obo/OBI_0000835" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#b7196b7a_c4ec_43b0_82d7_2097ac7e88d6" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_organism" } ,
+        "mURI": { "type": "uri" , "value": "http://purl.obolibrary.org/obo/OBI_0100026" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#1955fd49_6f3c_4ec2_895a_88248deab9d1" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_data_processing" } ,
+        "mURI": { "type": "uri" , "value": "http://purl.obolibrary.org/obo/OBI_0200000" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#10cee52a_3fe6_4786_be31_b797738f3733" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_file_format" } ,
+        "mURI": { "type": "uri" , "value": "http://purl.org/dc/terms/FileFormat" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#908630bc_610b_47cd_9cc1_ad7b2e2a1e75" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_data_format" } ,
+        "mURI": { "type": "uri" , "value": "http://purl.org/dc/terms/FileFormat" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#feafbf7b_87b3_4960_87c5_c205425abff7" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_file_created_date" } ,
+        "mURI": { "type": "uri" , "value": "http://purl.org/dc/terms/created" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#f63fc9ba_3ee2_4d3c_aaec_6d268bfd0097" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_created_date" } ,
+        "mURI": { "type": "uri" , "value": "http://purl.org/dc/terms/created" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#0e0500a5_2492_4f95_a055_1c969a6552fe" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_description" } ,
+        "mURI": { "type": "uri" , "value": "http://purl.org/dc/terms/description" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#5daf0d73_36c3_4a78_9b7a_bf3ffc7e703f" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "s_file_uri" } ,
+        "mURI": { "type": "uri" , "value": "http://purl.org/dc/terms/identifier" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#70a94262_0fbb_406f_af02_20e467827295" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "s_object_uri" } ,
+        "mURI": { "type": "uri" , "value": "http://purl.org/dc/terms/identifier" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#22cb7a3e_cd4c_46fa_8d16_1c48f330ea03" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "s_user_uri" } ,
+        "mURI": { "type": "uri" , "value": "http://purl.org/dc/terms/identifier" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#b1163610_4351_458e_9058_a73617ebb535" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_file_modified_date" } ,
+        "mURI": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#10dcdaf9_6bdb_4b1f_bda7_2c46e5f1c29d" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_modified_date" } ,
+        "mURI": { "type": "uri" , "value": "http://purl.org/dc/terms/modified" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#8da83cb0_8c7f_4de3_8f33_53806f782f79" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_owner" } ,
+        "mURI": { "type": "uri" , "value": "http://purl.org/dc/terms/rightsHolder" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#06f468b4_0805_4625_be67_19f71f0b22aa" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_title" } ,
+        "mURI": { "type": "uri" , "value": "http://purl.org/dc/terms/title" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#94c4e902_abd0_4a09_b739_3a3c4293bbb5" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "o_file_rdf_type" } ,
+        "mURI": { "type": "uri" , "value": "http://semanticscience.org/resource/SIO_000396" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#15a7ca38_0797_482d_8da9_83523207c8e1" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "o_object_rdf_type" } ,
+        "mURI": { "type": "uri" , "value": "http://semanticscience.org/resource/SIO_000776" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#6e4e8182_fb5b_49c9_85b2_11c2322c08f9" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_max_x" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#0417401a_6a71_439f_9350_2e7f7eda16c0" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#2000ed46_752f_4ef6_a9eb_e4a9cc5d27e0" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_protocol_name" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#15905bc4_f719_4e60_83e9_0dd3fb992bb6" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#1cd30d3c_65f6_435b_9200_a6417724c5ed" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_overall_design" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#25fa117e_82a4_469d_9c79_20ad327c0d9f" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#a4330bca_7b02_432d_8d89_787c0027cd0e" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_file" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#262f073f_4175_458e_9c5e_d439c4868b12" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#34127d03_aea2_4a24_871c_6f7e9ac72823" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_file_count" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#3830c914_d165_4882_a008_fd0183d908fb" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#710861ec_045b_4121_adcd_2e2d604bdf6f" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_mr_image_contrast" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#39b81e00_3631_45c4_8119_8d533d92c7d6" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#02cb0edc_a1e2_4256_aad2_882619d8ed04" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_segmentation_method_description" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#4018b472_5739_44a2_a9f3_3c73132e4c6b" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#76c6ea36_0f77_456e_80e3_518d91f89511" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_max_z" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#5c9ea647_d041_4323_b498_37d1ce51ccb7" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#6c53dea9_bbf4_4dfb_8bc8_c712d364831b" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_genomic_series_type" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#6ee77087_8f44_4952_ba91_ff0c2de3efbb" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#71c475f1_9e58_4af6_8aec_f5960fdfc497" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_channel_count" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#74ab6814_3647_4df6_a914_2b74909e03c2" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#9bfeb60b_aa1a_4242_a43d_eda6313aa811" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_ethnic_group" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#7bbe3343_d151_4d63_bfb5_71bb3404ce88" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#120cf830_95b4_4943_a1ba_70cc137b9031" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_min_z" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#7e69e877_dc06_4bcc_b839_ffb150e589fa" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#8a20edb0_c831_4dbf_9e06_fec8c583a39e" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_dataset_type" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#7f27ffa3_fee5_444e_a9f6_d791588e8e34" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#6a8f3028_aa28_422e_8b4c_ba33628e9a5f" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_gender" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#8e97cbd3_3034_460d_b92e_753b41b5b604" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#a491230d_9533_4971_a635_14fd6d4596a8" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_mr_image_sequence_acronym" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#90a4d5bd_8f00_44be_87a3_c7678b03ea73" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#859670b5_8337_4f2d_8473_a2761b49e09f" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_object_size" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#986c7d0f_9155_48d2_945a_09f71b5dbcf0" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#695f2c77_baf2_484e_abf0_54c223d3ab8c" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_metadata_version_oid" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#aa335ac2_86cb_4754_b627_14ed4ead6407" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#cb25f8e6_95b0_4c23_b1d4_0128b7c337a5" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_type" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#ab4695f0_f7b6_4817_9674_140530187ea1" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#748308cb_ba84_40bd_bbe4_4437d5740a43" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_max_y" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#b558eb19_4fb4_4c32_9ad6_ade89f352cca" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#4feddfcd_6f80_48c8_a7d3_ea23e14997f9" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_modality" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#b6627c77_7187_4fcb_8c10_e7ba1e6edc2e" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#251dd3f4_4eb3_4cf3_84b2_d4d224445d1e" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_title_immutable" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#bb2dc445_fae2_4bf8_afe1_1cee217de153" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#ac1e9418_cf1e_471b_9e44_ea7f71069698" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_related" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#be04f431_e75e_463d_b5cd_fd6ffc2381d5" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#0cb8a2d4_057c_4f24_9964_6617954b6880" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_min_x" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#bedb6cc4_bd36_47c8_825f_6d372482ca10" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#27a66f08_d657_43de_acdd_607feefba4b1" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_min_y" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#c49ce334_160d_4502_80d7_fe5db96d2382" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#cfaf85a1_25e5_4d96_a009_6763b068da1d" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_segmentation_method" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#c65de711_0f9c_4bc4_b498_adf8ee615313" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#51809915_1fed_40b2_9ddf_a14e61ddcbc3" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_file_anonymized_hashcode" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#c673c807_abac_43a9_9716_b8a45bdbe6e7" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#6ebccf4e_c145_49c5_8016_d4d786f8520f" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_iid" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#ceffb835_6e20_40ac_a438_e779c78a40a7" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#6ab31f5f_ad9b_4b56_a5da_fe4c76970e48" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_subject_key" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#d1e06386_2da3_4023_9a67_f9f52521cfad" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#213634ed_fec9_4f36_9e79_228f46642e87" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_license" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#d57f2d0e_3377_4655_8f84_86473c3f8680" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#75b1f9ed_ab1c_4462_82e3_3a657def9105" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_anatomical_region" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#dbdb4b9d_df0b_4c20_8a87_7de5b6c3b635" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#40c8bdc3_cdd4_414f_9422_6edd6f294dd4" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_dominance" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#e011c050_3df0_4200_aa3c_20337fa0a338" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#dad2b0d0_3ffa_410b_83cd_9f6f2b23921a" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_image_number" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#e354e5e7_2a90_4c2b_9500_82061ceb9f60" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#f7606f2c_bba0_491b_b41a_91fdd88c0662" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_vertex_count" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#eb9a1ac3_4a89_4f89_9498_4f89be3c2c57" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#d1c8bdfc_1eab_41df_9b46_12c39c542925" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_acquisition_year" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#ec0874af_f71e_4128_a457_5cb28597d84f" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#776ddd8c_8599_4324_9c82_110e9bb2a603" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_description_immutable" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#f1720672_d6d3_44b9_9635_6e244decfd5d" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#e9af92b5_56ce_4b1d_9333_0239ec948a78" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_metadata_version_name" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#f36d99a4_9326_430c_bec1_d9fe92d86fc0" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#0ada5e2e_d487_4dca_814d_cce28be7dc1a" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_file_id" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#f8a6a94a_fead_4f18_8475_f59b8448ed1e" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#b3081f13_637b_4319_befb_8a623de26b31" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_id" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#f8a6a94a_fead_4f18_8475_f59b8448ed1e" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#38635e54_dd79_4f98_8316_4aa91e5a8393" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_user_id" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#f8a6a94a_fead_4f18_8475_f59b8448ed1e" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#94aabc55_ecf2_4904_b5e7_b4625b01ad2e" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_file_number" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#fa69d838_45ab_44f7_ae52_ca8f4ec55883" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#46e202b9_be27_47a4_8017_694b911a1223" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_abstract_immutable" } ,
+        "mURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#ffa48b80_80ff_4a7f_94a0_78c6a36adcf0" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#8bcdf331_a3e2_4764_bc44_40d0f22d856f" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_name" } ,
+        "mURI": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#ef93bd9e_7004_41d6_9a2f_27dfe3368b6d" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "o_user_rdf_type" } ,
+        "mURI": { "type": "uri" , "value": "http://xmlns.com/foaf/0.1/Person" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#b13b5c4a_659d_444c_8d5a_5137dc77fcef" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_object_age" } ,
+        "mURI": { "type": "uri" , "value": "http://xmlns.com/foaf/0.1/age" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#9d566a92_309e_4ad0_9cba_5cc6556170fa" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_user_firstname" } ,
+        "mURI": { "type": "uri" , "value": "http://xmlns.com/foaf/0.1/firstName" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#7b7e34ae_07d5_43e6_864c_a0b72b30d0ba" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_user_lastname" } ,
+        "mURI": { "type": "uri" , "value": "http://xmlns.com/foaf/0.1/lastName" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#748bfce9_e915_4a5c_9cb9_9538f262b616" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_user_email" } ,
+        "mURI": { "type": "uri" , "value": "http://xmlns.com/foaf/0.1/mbox" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#bf714267_5f34_461b_9416_c2e07d0471e6" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_user_username" } ,
+        "mURI": { "type": "uri" , "value": "http://xmlns.com/foaf/0.1/nick" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#b2ef9e1c_d61a_4a12_8ba1_ccdab2158c8e" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_user_status" } ,
+        "mURI": { "type": "uri" , "value": "http://xmlns.com/foaf/0.1/status" }
+      } ,
+      {
+        "pURI": { "type": "uri" , "value": "http://www.virtualskeleton.ch/MIAF.owl#2b9f76eb_c7c6_449c_b7bd_b9d2be59410e" } ,
+        "pLabel": { "type": "literal" , "xml:lang": "en" , "value": "p_user_title" } ,
+        "mURI": { "type": "uri" , "value": "http://xmlns.com/foaf/0.1/title" }
+      }
+    ]
+  }
+}
