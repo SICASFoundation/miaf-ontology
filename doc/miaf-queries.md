@@ -1,66 +1,17 @@
-## queries in vsd meta onto
+# Protege, Sparql tips
 
-### list the genders with abbreviation and label
+http://www.slideshare.net/LeeFeigenbaum/sparql-cheat-sheet
 
-```
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX vsd: <http://www.virtualskeleton.ch/vsd#>
+- rdf:type = a
+- objects lists separated by `,`
+- new line with same subject (predicate - object list) `;`
+- rdf list abbrev. `(` `)`
+- Bnode abbrev, `[` `]`
+- `FILTER ( lang(?label) = "en" )`
 
-SELECT DISTINCT ?uri ?label ?abbr
+## queries for MIAF Ontology
 
-FROM <http://www.virtualskeleton.ch/data/vsd>
-
-WHERE {
-?uri <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/PATO_0000047> .
-?uri <http://www.w3.org/2000/01/rdf-schema#label>   ?label .
-?uri vsd:abbreviation ?abbr .
-}
-
-LIMIT 100
-```
-
-### and the modalities
-
-```
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX vsd: <http://www.virtualskeleton.ch/vsd#>
-
-SELECT DISTINCT ?uri ?label ?abbr
-
-FROM <http://www.virtualskeleton.ch/data/vsd>
-
-WHERE {
-?uri <http://www.w3.org/2000/01/rdf-schema#subClassOf> vsd:mr-sequence-acronym .
-?uri <http://www.w3.org/2000/01/rdf-schema#label>   ?label .
-?uri vsd:abbreviation ?abbr .
-}
-```
-
-### list the properties of a class
-
-```
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX vsd: <http://www.virtualskeleton.ch/vsd#>
-
-SELECT DISTINCT ?p ?label 
-
-FROM <http://www.virtualskeleton.ch/data/vsd>
-
-WHERE {
-vsd:mr-sequence-acronym ?p ?label
-}
-```
-
-### PRefix list
+### Prefix list
 
 ```
 PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -93,7 +44,6 @@ PREFIX unit:    <http://qudt.org/vocab/unit#>
 PREFIX ncit:    <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#>
 ```
 
-
 ### all entries with type and class and uri
 
 ```
@@ -107,7 +57,39 @@ ORDER BY ?class
 
 ```
 
-### instances of a class with abbreviation: get all license indstance
+
+### Gender 
+list the genders with abbreviation and label
+
+```
+SELECT DISTINCT ?uri ?label ?abbr
+
+FROM <http://www.virtualskeleton.ch/data/vsd>
+
+WHERE {
+?uri <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/PATO_0000047> .
+?uri <http://www.w3.org/2000/01/rdf-schema#label>   ?label .
+?uri uberon:ABBREVIATION ?abbr .
+}
+
+LIMIT 100
+```
+
+
+### list the properties of a class
+
+```
+SELECT DISTINCT ?p ?label 
+
+FROM <http://www.virtualskeleton.ch/data/vsd>
+
+WHERE {
+miaf:b7594bd1_eb1f_4b7b_8504_4be86855ba9d ?p ?label
+}
+```
+
+
+### instances of a class with abbreviation: get all license instance
 
 ```
 
@@ -124,6 +106,7 @@ ORDER BY ?abbr
 ```
 
 #### Other properties for
+
 - Handedness: `<http://purl.bioontology.org/ontology/SNOMEDCT/57427004>`
 - Gender: `obo:PATO_0000047`
 - License: `odrl:Policy`
@@ -137,7 +120,7 @@ ORDER BY ?abbr
 SELECT DISTINCT ?uri ?abbr
 WHERE {
 
-?class rdfs:subClassOf* miaf:00000014 .
+?class rdfs:subClassOf* miaf:b7594bd1_eb1f_4b7b_8504_4be86855ba9d .
 ?uri rdf:type ?class .
 ?uri uberon:ABBREVIATION ?abbr .
 
@@ -154,7 +137,7 @@ ORDER BY ?abbr
 - 
 
 
-### object properties with display label
+### object data properties with display label
 
 ```
 SELECT DISTINCT ?s ?disp ?uri ?label ?abbr 
@@ -164,7 +147,7 @@ WHERE {
 
 ?s rdf:type owl:DatatypeProperty .
 ?s rdfs:label ?label .
-?s miaf:00000376 ?disp .
+?s miaf:c56d337f_b0af_4860_92c6_9b134863a5d8 ?disp .
 
 OPTIONAL {
     ?s uberon:ABBREVIATION ?abbr .
@@ -212,7 +195,7 @@ miaf:c56d337f_b0af_4860_92c6_9b134863a5d8 ?p ?o .
 ORDER BY ?label
 ```
 
-### showl object properties of type raw which are has_default_property
+### show object properties of type raw which are has_default_property
 
 ```
 SELECT DISTINCT ?o ?name

@@ -1835,6 +1835,9 @@
         <Class IRI="http://cbakerlab.unbsj.ca:8080/sebi/BIM.owl#Magnetic_resonance_imaging"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#aaf2b77a_f251_4f15_aeec_5bea54dfb97b"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="foaf:title"/>
     </Declaration>
     <Declaration>
@@ -2986,6 +2989,10 @@
     <SubClassOf>
         <Class IRI="#aa667a3e_95fb_40c7_bc97_b572c554fa9c"/>
         <Class IRI="#8e6c6773_d120_433f_9441_3e252583ad93"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#aaf2b77a_f251_4f15_aeec_5bea54dfb97b"/>
+        <Class abbreviatedIRI="edamontology2:format_2333"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#afc63562_3d69_4ed7_b570_c02de203d194"/>
@@ -8434,6 +8441,11 @@
         <AbbreviatedIRI>dc:format</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:format"/>
+        <AbbreviatedIRI>edamontology2:format_2330</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>edamontology2:format_2330</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Textual format</Literal>
@@ -8451,7 +8463,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="uberon:ABBREVIATION"/>
         <AbbreviatedIRI>edamontology2:format_3508</AbbreviatedIRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PDF</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PDF</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8464,9 +8476,24 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">DICOM</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:format"/>
+        <AbbreviatedIRI>edamontology2:format_3548</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/dicom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>edamontology2:format_3548</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Digital Imaging and Communications in Medicine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:format"/>
+        <AbbreviatedIRI>edamontology2:format_3549</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/gzip</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:format"/>
+        <AbbreviatedIRI>edamontology2:format_3549</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/octet-stream</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboInOwl:hasExactSynonym"/>
@@ -8534,6 +8561,11 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">HDF5</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:format"/>
+        <AbbreviatedIRI>edamontology2:format_3590</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x-hdf;subtype=bag</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboInOwl:hasExactSynonym"/>
         <AbbreviatedIRI>edamontology2:format_3590</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">h5</Literal>
@@ -8571,7 +8603,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dcterms:format"/>
         <AbbreviatedIRI>edamontology2:format_3604</AbbreviatedIRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">svg+xml</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">svg+xml</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dcterms:title"/>
@@ -11538,7 +11570,7 @@ default for object: dataset</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dcterms:format"/>
         <IRI>#StereoLithography</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/sla</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboInOwl:hasExactSynonym"/>
@@ -11756,6 +11788,39 @@ default for object: dataset</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Image segmentation method</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="uberon:ABBREVIATION"/>
+        <IRI>#aaf2b77a_f251_4f15_aeec_5bea54dfb97b</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hdr</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>#aaf2b77a_f251_4f15_aeec_5bea54dfb97b</IRI>
+        <IRI>http://orcid.org/0000-0002-1273-9473</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <IRI>#aaf2b77a_f251_4f15_aeec_5bea54dfb97b</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-31T10:30:27Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <IRI>#aaf2b77a_f251_4f15_aeec_5bea54dfb97b</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Mayo Clinic Analyze 7.5 format is a file format for storing MRI data. An Analyze 7.5 data set consists of two files:
+
+    Header file (something.hdr): Provides dimensional, identifying and some processing history information
+    Image file (something.img): Stream of voxels, whose datatype and ordering are described by the header file</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:format"/>
+        <IRI>#aaf2b77a_f251_4f15_aeec_5bea54dfb97b</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/octet-stream</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#aaf2b77a_f251_4f15_aeec_5bea54dfb97b</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Analyze 7.5</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
         <IRI>#ab4695f0_f7b6_4817_9674_140530187ea1</IRI>
         <IRI>http://orcid.org/0000-0002-1273-9473</IRI>
@@ -11888,7 +11953,7 @@ default for object: dataset</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dcterms:format"/>
         <IRI>#afc63562_3d69_4ed7_b570_c02de203d194</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/xml</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/xml</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dcterms:title"/>
@@ -13187,7 +13252,7 @@ fast breath-hold sequence used in the abdomen</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dcterms:format"/>
         <IRI>#d2dbb6f0_68af_45c6_9f4d_e059e1413fc9</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/markdown</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/markdown</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -16308,7 +16373,7 @@ image of FISP.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dcterms:format"/>
         <IRI>#35b5be3d_4cb7_4598_bcf1_80c3b49d93f3</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/xml</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text/xml</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -17749,6 +17814,11 @@ image of FISP.</Literal>
         <AnnotationProperty abbreviatedIRI="dcterms:description"/>
         <IRI>#62ce375e_d24c_46f7_9230_982aee8aba00</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Statismo file format is based on HDF5, description here: https://github.com/statismo/statismo/wiki/The-Statismo-File-Format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dcterms:format"/>
+        <IRI>#62ce375e_d24c_46f7_9230_982aee8aba00</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">application/x-hdf;subtype=bag</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dcterms:title"/>
