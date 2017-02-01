@@ -98,7 +98,7 @@ Subjects dont have to be created as they are only needed in the triple store. Ho
 - 1 user instance
 
 ![object annotation](doc/assets/object_annotation.png)
-![object property assertion](doc/assets/object_propery_assertion.png)
+![object property assertion](doc/assets/object_property_assertion.png)
 
 ### Add `Object`
 1. create the class (structure) to the `Object property` class using the external `IRI`
