@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1485859584246" name="http://bioontology.org/projects/ontologies/birnlex" uri="ontologies/BIRNLex.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1485859584246" name="http://edamontology.org" uri="ontologies/EDAM_1.15.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1485859584246" name="http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mr-dataset-acquisition.owl" uri="ontologies/ontoneurolog-mr-dataset-acquisition.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1485859584246" name="http://open.vocab.org/terms" uri="ontologies/open-vocab-terms.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1485859584246" name="http://purl.obolibrary.org/obo/ero.owl" uri="ontologies/ero.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1485859584246" name="http://purl.obolibrary.org/obo/hp/hp-logical-definitions" uri="ontologies/hpo-xp-edit.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1485859584246" name="http://purl.obolibrary.org/obo/obi.owl" uri="ontologies/obi.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1485859584246" name="http://purl.obolibrary.org/obo/pato.owl" uri="ontologies/pato.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1485859584246" name="http://purl.obolibrary.org/obo/uo.owl" uri="ontologies/uo.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1485859584246" name="http://qudt.org/1.1/vocab/unit" uri="ontologies/qudt-unit.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1485859584246" name="http://semantic-dicom.org/dcm" uri="ontologies/SEDI06.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1485859584246" name="http://www.virtualskeleton.ch/MIAF.owl" uri="miaf-2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1491208158235" name="http://bioontology.org/projects/ontologies/birnlex" uri="ontologies/BIRNLex.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1491208158235" name="http://edamontology.org" uri="ontologies/EDAM_1.15.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1491208158235" name="http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mr-dataset-acquisition.owl" uri="ontologies/ontoneurolog-mr-dataset-acquisition.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1491208158235" name="http://open.vocab.org/terms" uri="ontologies/open-vocab-terms.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1491208158235" name="http://purl.obolibrary.org/obo/ero.owl" uri="ontologies/ero.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1491208158235" name="http://purl.obolibrary.org/obo/hp/hp-logical-definitions" uri="ontologies/hpo-xp-edit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1491208158235" name="http://purl.obolibrary.org/obo/obi.owl" uri="ontologies/obi.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1491208158235" name="http://purl.obolibrary.org/obo/pato.owl" uri="ontologies/pato.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1491208158235" name="http://purl.obolibrary.org/obo/uo.owl" uri="ontologies/uo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1491208158235" name="http://qudt.org/1.1/vocab/unit" uri="ontologies/qudt-unit.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1491208158235" name="http://semantic-dicom.org/dcm" uri="ontologies/SEDI06.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1491208158235" name="http://www.virtualskeleton.ch/MIAF.owl" uri="miaf-2.owl"/>
     </group>
 </catalog>
