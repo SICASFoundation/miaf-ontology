@@ -1,0 +1,214 @@
+# the urls point to collection objects
+# collection objects have to have a json-ld
+# we have to replace all @ with @@ for c#
+<script type="application/ld+json">
+{
+  "@context": {
+    "@language": "en",
+    "@base": "https://www.smir.ch/",
+    "schema": "http://schema.org/"
+  },
+  "@type":"schema:ItemList",
+  "schema:itemListElement":[
+    {
+      "@type":"schema:ListItem",
+      "position":1,
+      "url":"http://example.com/desserts/apple-pie"
+    },
+    {
+      "@type":"schema:ListItem",
+      "position":2,
+      "url":"http://example.com/desserts/cherry-pie"
+    },
+    {
+      "@type":"schema:ListItem",
+      "position":3,
+      "url":"objects/"
+    }
+  ]
+}
+</script>
+
+# This version contains the json-ld directly
+# add collection as dataset....
+# 
+<script type="application/ld+json">
+{
+  "@context": {
+    "@language": "en",
+    "@base": "https://www.smir.ch/",
+    "schema": "http://schema.org/"
+  },
+  "@type":"schema:ItemList",
+  "schema:itemListElement":[
+    {
+      "@type": "ListItem",
+      "position": "1",
+      "item": {
+        "@context": {
+      "@language": "en",
+      "@base": "https://www.smir.ch/",
+      "schema": "http://schema.org/",
+      "fma": "http://purl.org/sig/ont/fma/"
+    },
+    "@type": "schema:DataCatalog",
+    "@id": "http://doi.org/10.22016/smir.o.204388",
+    "schema:sameAs": "https://www.smir.ch/objects/12214315",
+    "schema:alternateName": "SMIR.Temporal_bone.XX.XX.OT.204388.md",
+    "schema:name": "The HEAR-EU Multiscale Imaging and Modelling Dataset of the Human Inner Ear",
+    "schema:about": {
+      "@type": "schema:Thing",
+      "schema:name": "Temporal bone",
+      "@id": "fma:fma_12891"
+    },
+    "schema:description": "This data makes an important asset for future studies in need of high-resolution data and related statistical data objects of the cochlea used to leverage scientific hypotheses.",
+    "schema:keywords": [
+      "Temporal bone",
+      "Collection"
+    ],
+    "schema:license": {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "CC_BY_3.0",
+      "schema:url": "http://creativecommons.org/licenses/by/3.0/ch/deed.en"
+    },
+    "schema:fileFormat": ["text/markdown", "text/csv", "application/json"],
+    "schema:url": "https://www.smir.ch/objects/12332",
+    "schema:dateCreated": "2016-07-21",
+    "schema:dateModified": "2017-09-15",
+    "schema:aggregateRating": {
+      "@type": "schema:AggregateRating",
+      "schema:ratingValue": "4.5",
+      "schema:ratingCount": "2"
+    },
+    "schema:citation":"Mauricio Reyes, 2017, Title of collection, SICAS Medical Image Repository, http://doi.org/10.22016/smir.o.214315",
+    "schema:contentLocation": {
+      "@type": "schema:Place",
+      "schema:url": "https://www.smir.ch/objects/2/download"
+    },
+    "schema:publisher": {
+      "@type": "schema:Organization",
+      "schema:name": "SICAS Medical Image Repository (SMIR)",
+      "schema:url": "https://www.smir.ch"
+    },
+    "schema:creator": {
+      "@type": "schema:Person",
+      "schema:name": "Mauricio Reyes",
+      "schema:email": "mauricio.reyes@istb.unibe.ch"
+    },
+    "schema:thumbnailUrl": "https://www.smir.ch/Handler/ObjectImage.ashx?objectId=200318&number=2&type=0",
+    "schema:hasPart": [{
+        "@type": "schema:Dataset",
+        "@id": "objects/214315",
+        "schema:sameAs": "http://doi.org/10.22016/smir.o.214315",
+        "schema:alternateName": "SMIR.Lower_limb.089Y.M.CT.214315.000.dcm",
+        "schema:name": "Medical Dataset: Raw Image (CT_microCT) of Cochlea from subject of age XX"
+      },
+      {
+        "@type": "schema:Dataset",
+        "@id": "objects/214316",
+        "schema:sameAs": "http://doi.org/10.22016/smir.o.214316",
+        "schema:alternateName": "SMIR.Lower_limb.089Y.M.CT.214316.000.dcm",
+        "schema:name": "Medical Dataset: Raw Image (CT_microCT) of Cochlea from subject of age XX"
+      },
+      {
+        "@type": "schema:Dataset",
+        "@id": "objects/214317",
+        "schema:sameAs": "http://doi.org/10.22016/smir.o.214317",
+        "schema:alternateName": "SMIR.Lower_limb.089Y.M.CT.214317.000.dcm",
+        "schema:name": "Medical Dataset: Raw Image (CT_microCT) of Cochlea from subject of age XX"
+      },
+      {
+        "@id": "objects/214318",
+        "schema:sameAs": "http://doi.org/10.22016/smir.o.214318",
+        "schema:alternateName": "SMIR.Lower_limb.089Y.M.CT.214318.000.dcm",
+        "schema:name": "Medical Dataset: Raw Image (CT_microCT) of Cochlea from subject of age XX"
+      }
+    ]
+      },
+      "@type": "ListItem",
+      "position": "2",
+      "item": {
+        "@context": {
+      "@language": "en",
+      "@base": "https://www.smir.ch/",
+      "schema": "http://schema.org/",
+      "fma": "http://purl.org/sig/ont/fma/"
+    },
+    "@type": "schema:DataCatalog",
+    "@id": "http://doi.org/10.22016/smir.o.204338",
+    "schema:sameAs": "https://www.smir.ch/objects/12214315",
+    "schema:alternateName": "SMIR.Temporal_bone.XX.XX.OT.204388.md",
+    "schema:name": "The HEAR-EU Multiscale Imaging and Modelling Dataset of the Human Inner Ear",
+    "schema:about": {
+      "@type": "schema:Thing",
+      "schema:name": "Temporal bone",
+      "@id": "fma:fma_12891"
+    },
+    "schema:description": "This data makes an important asset for future studies in need of high-resolution data and related statistical data objects of the cochlea used to leverage scientific hypotheses.",
+    "schema:keywords": [
+      "Temporal bone",
+      "Collection"
+    ],
+    "schema:license": {
+      "@type": "schema:DigitalDocument",
+      "schema:name": "CC_BY_3.0",
+      "schema:url": "http://creativecommons.org/licenses/by/3.0/ch/deed.en"
+    },
+    "schema:fileFormat": ["text/markdown", "text/csv", "application/json"],
+    "schema:url": "https://www.smir.ch/objects/12332",
+    "schema:dateCreated": "2016-07-21",
+    "schema:dateModified": "2017-09-15",
+    "schema:aggregateRating": {
+      "@type": "schema:AggregateRating",
+      "schema:ratingValue": "4.5",
+      "schema:ratingCount": "2"
+    },
+    "schema:citation":"Mauricio Reyes, 2017, Title of collection, SICAS Medical Image Repository, http://doi.org/10.22016/smir.o.214315",
+    "schema:contentLocation": {
+      "@type": "schema:Place",
+      "schema:url": "https://www.smir.ch/objects/2/download"
+    },
+    "schema:publisher": {
+      "@type": "schema:Organization",
+      "schema:name": "SICAS Medical Image Repository (SMIR)",
+      "schema:url": "https://www.smir.ch"
+    },
+    "schema:creator": {
+      "@type": "schema:Person",
+      "schema:name": "Mauricio Reyes",
+      "schema:email": "mauricio.reyes@istb.unibe.ch"
+    },
+    "schema:thumbnailUrl": "https://www.smir.ch/Handler/ObjectImage.ashx?objectId=200318&number=2&type=0",
+    "schema:hasPart": [{
+        "@type": "schema:Dataset",
+        "@id": "objects/214315",
+        "schema:sameAs": "http://doi.org/10.22016/smir.o.214315",
+        "schema:alternateName": "SMIR.Lower_limb.089Y.M.CT.214315.000.dcm",
+        "schema:name": "Medical Dataset: Raw Image (CT_microCT) of Cochlea from subject of age XX"
+      },
+      {
+        "@type": "schema:Dataset",
+        "@id": "objects/214316",
+        "schema:sameAs": "http://doi.org/10.22016/smir.o.214316",
+        "schema:alternateName": "SMIR.Lower_limb.089Y.M.CT.214316.000.dcm",
+        "schema:name": "Medical Dataset: Raw Image (CT_microCT) of Cochlea from subject of age XX"
+      },
+      {
+        "@type": "schema:Dataset",
+        "@id": "objects/214317",
+        "schema:sameAs": "http://doi.org/10.22016/smir.o.214317",
+        "schema:alternateName": "SMIR.Lower_limb.089Y.M.CT.214317.000.dcm",
+        "schema:name": "Medical Dataset: Raw Image (CT_microCT) of Cochlea from subject of age XX"
+      },
+      {
+        "@id": "objects/214318",
+        "schema:sameAs": "http://doi.org/10.22016/smir.o.214318",
+        "schema:alternateName": "SMIR.Lower_limb.089Y.M.CT.214318.000.dcm",
+        "schema:name": "Medical Dataset: Raw Image (CT_microCT) of Cochlea from subject of age XX"
+      }
+    ]
+      }
+    }
+  ]
+}
+</script>

@@ -1,3 +1,4 @@
+# we have to replace all @ with @@ for c#
 < script type = "application/ld+json" > {
     "@context": {
       "@language": "en",
@@ -6,8 +7,8 @@
       "fma": "http://purl.org/sig/ont/fma/"
     },
     "@type": "schema:DataCatalog",
-    "@id": "objects/12214315",
-    "schema:sameAs": "http://doi.org/10.22016/smir.o.204388",
+    "@id": "http://doi.org/10.22016/smir.o.204388",
+    "schema:sameAs": "https://www.smir.ch/objects/12214315",
     "schema:alternateName": "SMIR.Temporal_bone.XX.XX.OT.204388.md",
     "schema:name": "The HEAR-EU Multiscale Imaging and Modelling Dataset of the Human Inner Ear",
     "schema:about": {
@@ -34,13 +35,14 @@
       "schema:ratingValue": "4.5",
       "schema:ratingCount": "2"
     },
+    "schema:citation":"Mauricio Reyes, 2017, Title of collection, SICAS Medical Image Repository, http://doi.org/10.22016/smir.o.214315",
     "schema:contentLocation": {
       "@type": "schema:Place",
       "schema:url": "https://www.smir.ch/objects/2/download"
     },
     "schema:publisher": {
       "@type": "schema:Organization",
-      "schema:name": "SMIR, SICAS Medical Image Repository",
+      "schema:name": "SICAS Medical Image Repository (SMIR)",
       "schema:url": "https://www.smir.ch"
     },
     "schema:creator": {

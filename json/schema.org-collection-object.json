@@ -1,5 +1,5 @@
 # we have to replace all @ with @@ for c#
-# google only recognizes datasets, no datacatalog, therefore are collections also datasets
+# google only recognizes datasets, no datacatalog, therefore are collections also datasets, add email to creator
 <script type = "application/ld+json">
 {
     "@context": {
@@ -7,10 +7,11 @@
       "@base": "https://www.smir.ch/",
       "schema": "http://schema.org/",
       "fma":"http://purl.org/sig/ont/fma/",
-      "doi":"http://doi.org/"
+      "doi":"http://doi.org/",
+      "doi_smir":"http://doi.org/10.22016/smir.o."
     },
     "@type": "schema:Dataset",
-    "@id": "doi:10.22016/smir.o.214315",
+    "@id": "doi_smir:214315",
     "schema:sameAs": "https://www.smir.ch/objects/214315",
     "schema:alternateName": "SMIR.Lower_limb.089Y.M.CT.2.000.dcm",
     "schema:name": "Medical Dataset: Raw Image (CT_microCT) of Cochlea from subject of age XX",
@@ -51,7 +52,6 @@
       "@type": "schema:DataDownload",
       "schema:encodingFormat": "zip",
       "schema:contentUrl": "https://www.smir.ch/objects/1231232/download"
-
     },
     "schema:publisher": {
       "@type": "schema:Organization",

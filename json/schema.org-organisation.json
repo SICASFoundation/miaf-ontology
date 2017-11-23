@@ -1,0 +1,28 @@
+# we have to replace all @ with @@ for c#
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "https://www.smir.ch",
+  "logo": "https://www.smir.ch/Content/images/smir-logo-90dpi.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "support@smir.ch",
+    "url": "https://tickets.smir.ch",
+    "telephone": "+41-32-422-5820",
+    "contactType": "customer support",
+  	"availableLanguage": [
+  		{
+        "@type": "Language",
+        "name": "English",
+        "alternateName": "en"
+		},
+		{
+        "@type": "Language",
+        "name": "German",
+        "alternateName": "de"
+        }
+     ]
+   }
+}
+</script>
