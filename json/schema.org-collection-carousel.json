@@ -12,18 +12,18 @@
   "schema:itemListElement":[
     {
       "@type":"schema:ListItem",
-      "position":1,
-      "url":"http://example.com/desserts/apple-pie"
+      "schema:position":1,
+      "schema:url":"https://www.smir.ch/objects/214315"
     },
     {
       "@type":"schema:ListItem",
-      "position":2,
-      "url":"http://example.com/desserts/cherry-pie"
+      "schema:position":2,
+      "schema:url":"https://www.smir.ch/objects/214259"
     },
     {
       "@type":"schema:ListItem",
-      "position":3,
-      "url":"objects/"
+      "schema:position":3,
+      "schema:url":"https://www.smir.ch/objects/204388"
     }
   ]
 }
@@ -37,23 +37,18 @@
   "@context": {
     "@language": "en",
     "@base": "https://www.smir.ch/",
-    "schema": "http://schema.org/"
+    "schema": "http://schema.org/",
+     "fma": "http://purl.org/sig/ont/fma/"
   },
   "@type":"schema:ItemList",
   "schema:itemListElement":[
     {
-      "@type": "ListItem",
-      "position": "1",
-      "item": {
-        "@context": {
-      "@language": "en",
-      "@base": "https://www.smir.ch/",
-      "schema": "http://schema.org/",
-      "fma": "http://purl.org/sig/ont/fma/"
-    },
+      "@type": "schema:ListItem",
+      "schema:position": "1",
+      "schema:item": {
     "@type": "schema:DataCatalog",
     "@id": "http://doi.org/10.22016/smir.o.204388",
-    "schema:sameAs": "https://www.smir.ch/objects/12214315",
+    "schema:sameAs": "https://www.smir.ch/objects/1221431",
     "schema:alternateName": "SMIR.Temporal_bone.XX.XX.OT.204388.md",
     "schema:name": "The HEAR-EU Multiscale Imaging and Modelling Dataset of the Human Inner Ear",
     "schema:about": {
@@ -124,16 +119,12 @@
         "schema:name": "Medical Dataset: Raw Image (CT_microCT) of Cochlea from subject of age XX"
       }
     ]
+      }
       },
-      "@type": "ListItem",
-      "position": "2",
-      "item": {
-        "@context": {
-      "@language": "en",
-      "@base": "https://www.smir.ch/",
-      "schema": "http://schema.org/",
-      "fma": "http://purl.org/sig/ont/fma/"
-    },
+     {
+      "@type": "schema:ListItem",
+      "schema:position": "1",
+      "schema:item": {
     "@type": "schema:DataCatalog",
     "@id": "http://doi.org/10.22016/smir.o.204338",
     "schema:sameAs": "https://www.smir.ch/objects/12214315",
