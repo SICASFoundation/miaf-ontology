@@ -30,7 +30,7 @@
 </script>
 
 # This version contains the json-ld directly
-# add collection as dataset....
+# add collection as dataset or article (article is supported for carousel). HOwever, this type cannot be used on smir, all infos need to be on the one=page, url should be the same page...
 # 
 <script type="application/ld+json">
 {
@@ -38,166 +38,195 @@
     "@language": "en",
     "@base": "https://www.smir.ch/",
     "schema": "http://schema.org/",
-     "fma": "http://purl.org/sig/ont/fma/"
+    "fma": "http://purl.org/sig/ont/fma/"
   },
-  "@type":"schema:ItemList",
-  "schema:itemListElement":[
+  "@type": "schema:ItemList",
+  "schema:itemListElement": [
     {
       "@type": "schema:ListItem",
       "schema:position": "1",
       "schema:item": {
-    "@type": "schema:DataCatalog",
-    "@id": "http://doi.org/10.22016/smir.o.204388",
-    "schema:sameAs": "https://www.smir.ch/objects/1221431",
-    "schema:alternateName": "SMIR.Temporal_bone.XX.XX.OT.204388.md",
-    "schema:name": "The HEAR-EU Multiscale Imaging and Modelling Dataset of the Human Inner Ear",
-    "schema:about": {
-      "@type": "schema:Thing",
-      "schema:name": "Temporal bone",
-      "@id": "fma:fma_12891"
-    },
-    "schema:description": "This data makes an important asset for future studies in need of high-resolution data and related statistical data objects of the cochlea used to leverage scientific hypotheses.",
-    "schema:keywords": [
-      "Temporal bone",
-      "Collection"
-    ],
-    "schema:license": {
-      "@type": "schema:DigitalDocument",
-      "schema:name": "CC_BY_3.0",
-      "schema:url": "http://creativecommons.org/licenses/by/3.0/ch/deed.en"
-    },
-    "schema:fileFormat": ["text/markdown", "text/csv", "application/json"],
-    "schema:url": "https://www.smir.ch/objects/12332",
-    "schema:dateCreated": "2016-07-21",
-    "schema:dateModified": "2017-09-15",
-    "schema:aggregateRating": {
-      "@type": "schema:AggregateRating",
-      "schema:ratingValue": "4.5",
-      "schema:ratingCount": "2"
-    },
-    "schema:citation":"Mauricio Reyes, 2017, Title of collection, SICAS Medical Image Repository, http://doi.org/10.22016/smir.o.214315",
-    "schema:contentLocation": {
-      "@type": "schema:Place",
-      "schema:url": "https://www.smir.ch/objects/2/download"
-    },
-    "schema:publisher": {
-      "@type": "schema:Organization",
-      "schema:name": "SICAS Medical Image Repository (SMIR)",
-      "schema:url": "https://www.smir.ch"
-    },
-    "schema:creator": {
-      "@type": "schema:Person",
-      "schema:name": "Mauricio Reyes",
-      "schema:email": "mauricio.reyes@istb.unibe.ch"
-    },
-    "schema:thumbnailUrl": "https://www.smir.ch/Handler/ObjectImage.ashx?objectId=200318&number=2&type=0",
-    "schema:hasPart": [{
         "@type": "schema:Dataset",
-        "@id": "objects/214315",
-        "schema:sameAs": "http://doi.org/10.22016/smir.o.214315",
-        "schema:alternateName": "SMIR.Lower_limb.089Y.M.CT.214315.000.dcm",
-        "schema:name": "Medical Dataset: Raw Image (CT_microCT) of Cochlea from subject of age XX"
-      },
-      {
-        "@type": "schema:Dataset",
-        "@id": "objects/214316",
-        "schema:sameAs": "http://doi.org/10.22016/smir.o.214316",
-        "schema:alternateName": "SMIR.Lower_limb.089Y.M.CT.214316.000.dcm",
-        "schema:name": "Medical Dataset: Raw Image (CT_microCT) of Cochlea from subject of age XX"
-      },
-      {
-        "@type": "schema:Dataset",
-        "@id": "objects/214317",
-        "schema:sameAs": "http://doi.org/10.22016/smir.o.214317",
-        "schema:alternateName": "SMIR.Lower_limb.089Y.M.CT.214317.000.dcm",
-        "schema:name": "Medical Dataset: Raw Image (CT_microCT) of Cochlea from subject of age XX"
-      },
-      {
-        "@id": "objects/214318",
-        "schema:sameAs": "http://doi.org/10.22016/smir.o.214318",
-        "schema:alternateName": "SMIR.Lower_limb.089Y.M.CT.214318.000.dcm",
-        "schema:name": "Medical Dataset: Raw Image (CT_microCT) of Cochlea from subject of age XX"
+        "@id": "doi_smir:214315",
+        "schema:sameAs": "https://www.smir.ch/objects/214315",
+        "schema:alternateName": "SMIR.Body_compartment.XX.XX.OT.214315.000.txt",
+        "schema:name": "SMIR Full Body CT",
+        "schema:about": [
+          {
+            "@type": "schema:Thing",
+            "schema:name": "Body compartment",
+            "@id": "fma:fma_7563 "
+          }
+        ],
+        "schema:description": "Post mortem full body CT ",
+        "schema:keywords": [
+          "Body",
+          "Human",
+          "Body compartment",
+          "CT"
+        ],
+        "schema:license": {
+          "@type": "schema:DigitalDocument",
+          "schema:name": "CC_BY_NC_SA_3.0",
+          "schema:url": "https://creativecommons.org/licenses/by-nc-sa/3.0/ch/deed.en"
+        },
+        "schema:fileFormat": [
+          "text/markdown",
+          "text/csv",
+          "application/json"
+        ],
+        "schema:url": "https://www.smir.ch/objects/214315#fileInformation",
+        "schema:dateCreated": "2017-08-17",
+        "schema:dateModified": "2017-08-17",
+        "schema:citation": "Michael Kistler, 2017, SMIR Full Body CT, Sicas Medical Image Repository, http://doi.org/10.22016/smir.o.214315",
+        "schema:distribution": {
+          "@type": "schema:DataDownload",
+          "schema:encodingFormat": "zip",
+          "schema:contentUrl": "https://www.smir.ch/objects/214315/download"
+        },
+        "schema:publisher": {
+          "@type": "schema:Organization",
+          "schema:name": "SICAS Medical Image Repository (SMIR)",
+          "schema:url": "https://www.smir.ch"
+        },
+        "schema:creator": {
+          "@type": "schema:Person",
+          "schema:givenName": "Michael",
+          "schema:familyName": "Kistler",
+          "schema:email":"michael.kistler@si-cas.com"
+        },
+        "schema:image": [
+          {
+            "@type": "schema:imageObject",
+            "schema:contentUrl": "https://www.smir.ch/Handler/ObjectImage.ashx?objectId=214315&number=0&type=1"
+          }
+        ]
       }
-    ]
-      }
-      },
-     {
+    }
+    ,
+    {
       "@type": "schema:ListItem",
       "schema:position": "1",
       "schema:item": {
-    "@type": "schema:DataCatalog",
-    "@id": "http://doi.org/10.22016/smir.o.204338",
-    "schema:sameAs": "https://www.smir.ch/objects/12214315",
-    "schema:alternateName": "SMIR.Temporal_bone.XX.XX.OT.204388.md",
-    "schema:name": "The HEAR-EU Multiscale Imaging and Modelling Dataset of the Human Inner Ear",
-    "schema:about": {
-      "@type": "schema:Thing",
-      "schema:name": "Temporal bone",
-      "@id": "fma:fma_12891"
-    },
-    "schema:description": "This data makes an important asset for future studies in need of high-resolution data and related statistical data objects of the cochlea used to leverage scientific hypotheses.",
-    "schema:keywords": [
-      "Temporal bone",
-      "Collection"
-    ],
-    "schema:license": {
-      "@type": "schema:DigitalDocument",
-      "schema:name": "CC_BY_3.0",
-      "schema:url": "http://creativecommons.org/licenses/by/3.0/ch/deed.en"
-    },
-    "schema:fileFormat": ["text/markdown", "text/csv", "application/json"],
-    "schema:url": "https://www.smir.ch/objects/12332",
-    "schema:dateCreated": "2016-07-21",
-    "schema:dateModified": "2017-09-15",
-    "schema:aggregateRating": {
-      "@type": "schema:AggregateRating",
-      "schema:ratingValue": "4.5",
-      "schema:ratingCount": "2"
-    },
-    "schema:citation":"Mauricio Reyes, 2017, Title of collection, SICAS Medical Image Repository, http://doi.org/10.22016/smir.o.214315",
-    "schema:contentLocation": {
-      "@type": "schema:Place",
-      "schema:url": "https://www.smir.ch/objects/2/download"
-    },
-    "schema:publisher": {
-      "@type": "schema:Organization",
-      "schema:name": "SICAS Medical Image Repository (SMIR)",
-      "schema:url": "https://www.smir.ch"
-    },
-    "schema:creator": {
-      "@type": "schema:Person",
-      "schema:name": "Mauricio Reyes",
-      "schema:email": "mauricio.reyes@istb.unibe.ch"
-    },
-    "schema:thumbnailUrl": "https://www.smir.ch/Handler/ObjectImage.ashx?objectId=200318&number=2&type=0",
-    "schema:hasPart": [{
         "@type": "schema:Dataset",
-        "@id": "objects/214315",
-        "schema:sameAs": "http://doi.org/10.22016/smir.o.214315",
-        "schema:alternateName": "SMIR.Lower_limb.089Y.M.CT.214315.000.dcm",
-        "schema:name": "Medical Dataset: Raw Image (CT_microCT) of Cochlea from subject of age XX"
-      },
-      {
-        "@type": "schema:Dataset",
-        "@id": "objects/214316",
-        "schema:sameAs": "http://doi.org/10.22016/smir.o.214316",
-        "schema:alternateName": "SMIR.Lower_limb.089Y.M.CT.214316.000.dcm",
-        "schema:name": "Medical Dataset: Raw Image (CT_microCT) of Cochlea from subject of age XX"
-      },
-      {
-        "@type": "schema:Dataset",
-        "@id": "objects/214317",
-        "schema:sameAs": "http://doi.org/10.22016/smir.o.214317",
-        "schema:alternateName": "SMIR.Lower_limb.089Y.M.CT.214317.000.dcm",
-        "schema:name": "Medical Dataset: Raw Image (CT_microCT) of Cochlea from subject of age XX"
-      },
-      {
-        "@id": "objects/214318",
-        "schema:sameAs": "http://doi.org/10.22016/smir.o.214318",
-        "schema:alternateName": "SMIR.Lower_limb.089Y.M.CT.214318.000.dcm",
-        "schema:name": "Medical Dataset: Raw Image (CT_microCT) of Cochlea from subject of age XX"
+        "@id": "doi_smir:214259",
+        "schema:sameAs": "https://www.smir.ch/objects/214259",
+        "schema:alternateName": "SMIR.Scapula.XX.XX.OT.214259.000.txt",
+        "schema:name": "Scapula Data Collection",
+        "schema:about": [
+          {
+            "@type": "schema:Thing",
+            "schema:name": "Scapula",
+            "@id": "fma:fma_13394 "
+          }
+        ],
+        "schema:description": "Collection human scapula CT  incl. surface models",
+        "schema:keywords": [
+          "Scapula",
+          "CT",
+          "STL",
+          "Surface Model"
+        ],
+        "schema:fileFormat": [
+          "text/markdown",
+          "text/csv",
+          "application/json"
+        ],
+        "schema:url": "https://www.smir.ch/objects/214259#fileInformation",
+        "schema:citation": "Philippe Büchler, 2017, Scapula Data Collection, http://doi.org/10.22016/smir.o.214259",
+        "schema:dateCreated": "2017-08-16",
+        "schema:dateModified": "2017-8-16",
+        "schema:distribution": {
+          "@type": "schema:DataDownload",
+          "schema:encodingFormat": "zip",
+          "schema:contentUrl": "https://www.smir.ch/objects/214259/download"
+        },
+        "schema:publisher": {
+          "@type": "schema:Organization",
+          "schema:name": "SICAS Medical Image Repository (SMIR)",
+          "schema:url": "https://www.smir.ch"
+        },
+        "schema:creator": {
+          "@type": "schema:Person",
+          "schema:givenName": "Philippe",
+          "schema:familyName": "Büchler",
+          "schema:email":"philippe.buechler@istb.unibe.ch"
+        },
+        "schema:image": [
+          {
+            "@type": "schema:imageObject",
+            "schema:contentUrl": "https://www.smir.ch/Handler/ObjectImage.ashx?objectId=214259&number=0&type=0"
+          }
+        ]
       }
-    ]
+    },
+    {
+      "@type": "schema:ListItem",
+      "schema:position": "1",
+      "schema:item": {
+        "@type": "schema:Dataset",
+        "@id": "doi_smir:204381",
+        "schema:sameAs": "https://www.smir.ch/objects/204381",
+        "schema:alternateName": "SMIR.Temporal_bone.XX.XX.OT.204381.000.txt",
+        "schema:name": "The HEAR-EU Multiscale Imaging and Modelling Dataset of the Human Inner Ear",
+        "schema:about": [
+          {
+            "@type": "schema:Thing",
+            "schema:name": "Temporal bone",
+            "@id": "fma:fma_52737"
+          }
+        ],
+        "schema:description": "This data makes an important asset for future studies in need of high-resolution data and related statistical data objects of the cochlea used to leverage scientific hypotheses.",
+        "schema:keywords": [
+          "Temporal bone",
+          "Data descriptor",
+          "MR",
+          "CT",
+          "CBCT",
+          "micro CT",
+          "statistical shape model"
+        ],
+        "schema:license": {
+          "@type": "schema:DigitalDocument",
+          "schema:name": "CC_BY_3.0",
+          "schema:url": "http://creativecommons.org/licenses/by/3.0/ch/deed.en"
+        },
+        "schema:fileFormat": [
+          "text/markdown",
+          "text/csv",
+          "application/json"
+        ],
+        "schema:url": "https://www.smir.ch/objects/204388#fileInformation",
+        "schema:dateCreated": "2017-07-14",
+        "schema:dateModified": "2017-07-14",
+        "schema:citation": "Mauricio Reyes, 2017, The HEAR-EU Multiscale Imaging and Modelling Dataset of the Human Inner Ear, Sicas Medical Image Repository, http://doi.org/10.22016/smir.o.204388",
+        "schema:aggregateRating": {
+          "@type": "schema:AggregateRating",
+          "schema:ratingValue": "4.75/5",
+          "schema:ratingCount": "2"
+        },
+        "schema:distribution": {
+          "@type": "schema:DataDownload",
+          "schema:encodingFormat": "zip",
+          "schema:contentUrl": "https://www.smir.ch/objects/204388/download"
+        },
+        "schema:publisher": {
+          "@type": "schema:Organization",
+          "schema:name": "SICAS Medical Image Repository (SMIR)",
+          "schema:url": "https://www.smir.ch"
+        },
+        "schema:creator": {
+          "@type": "schema:Person",
+          "schema:givenName": "Mauricio",
+          "schema:familyName": "Reyes",
+          "schema:email":"mauricio.reyes@istb.unibe.ch"
+        },
+        "schema:image": [
+          {
+            "@type": "schema:imageObject",
+            "schema:contentUrl": "https://www.smir.ch/Content/landingpage/images/vsd/sdatapubbadg1.jpg"
+          }
+        ]
       }
     }
   ]
