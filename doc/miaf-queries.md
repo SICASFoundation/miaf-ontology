@@ -1,4 +1,4 @@
-# Protege, Sparql tips
+Protege, Sparql tips
 
 http://www.slideshare.net/LeeFeigenbaum/sparql-cheat-sheet
 

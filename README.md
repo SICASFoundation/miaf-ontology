@@ -81,7 +81,7 @@ It is either generic describe classes/properties, generic to all objects,  or ha
 
 ## Extending
 
-** Look for already defined ontology classes**:
+**Look for already defined ontology classes**:
 - http://aber-owl.net/ontology
 - https://www.ebi.ac.uk/ols/
 - http://bioportal.bioontology.org/

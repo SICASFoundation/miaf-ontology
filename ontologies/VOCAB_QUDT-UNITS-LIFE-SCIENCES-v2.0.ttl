@@ -1,0 +1,181 @@
+# baseURI: http://qudt.org/2.0/vocab/unit/life-sciences
+# imports: http://qudt.org/2.0/schema/qudt/science
+# imports: http://qudt.org/2.0/vocab/quantitykind/base
+# imports: http://qudt.org/2.0/vocab/unit/base
+# imports: http://qudt.org/2.1/schema/qudt
+# imports: http://www.linkedmodel.org/schema/vaem
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dimension: <http://qudt.org/vocab/dimension/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix vaem: <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag: <http://voag.linkedmodel.org/schema/voag#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://qudt.org/2.0/vocab/unit/life-sciences>
+  a owl:Ontology ;
+  vaem:hasDisciplineScope "All Disciplines" ;
+  vaem:hasDomainScope "SI Science and Engineering Units" ;
+  vaem:hasGraphMetadata vaem:GMD_QUDT-UNITS-LIFE-SCIENCES ;
+  vaem:hasGraphRole vaem:VocabularyGraph ;
+  owl:imports <http://qudt.org/2.0/schema/qudt/science> ;
+  owl:imports <http://qudt.org/2.0/vocab/quantitykind/base> ;
+  owl:imports <http://qudt.org/2.0/vocab/unit/base> ;
+  owl:imports <http://qudt.org/2.1/schema/qudt> ;
+  owl:imports <http://www.linkedmodel.org/schema/vaem> ;
+  owl:versionIRI <http://qudt.org/2.0/vocab/unit/life-sciences> ;
+.
+unit:BEAT-PER-MIN
+  a qudt:CGS-Unit ;
+  a qudt:DerivedUnit ;
+  a qudt:EventUnit ;
+  a qudt:HeartRateUnit ;
+  a qudt:Unit ;
+  qudt:abbreviation "heartbeat" ;
+  qudt:code "2054" ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "\"Heart Beat per Minute\" is a C.G.S System unit for  'Heart Rate' expressed as \\(BPM\\)."^^rdf:HTML ;
+  qudt:hasQuantityKind quantitykind:HeartRate ;
+  qudt:id "U-150-2335" ;
+  qudt:symbol "beats-per-min" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/life-sciences> ;
+  rdfs:isDefinedBy unit:life-sciences ;
+  rdfs:label "Heart Beats per Minute" ;
+  skos:prefLabel "heart-beat-per-minute" ;
+.
+unit:BREATH-PER-MIN
+  a qudt:DerivedUnit ;
+  a qudt:RespiratoryRateUnit ;
+  qudt:abbreviation "breaths/min" ;
+  qudt:code "2495" ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "A unit of respiratory rate."^^rdf:HTML ;
+  qudt:hasQuantityKind quantitykind:RespiratoryRate ;
+  qudt:symbol "breaths/min" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/life-sciences> ;
+  rdfs:isDefinedBy unit:life-sciences ;
+  rdfs:label "Breath per Minute" ;
+  skos:prefLabel "breath-per-minute" ;
+.
+unit:CFU
+  a qudt:CGS-Unit ;
+  a qudt:MicrobialFormationUnit ;
+  a qudt:Unit ;
+  qudt:abbreviation "CFU" ;
+  qudt:code "2405" ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "\"Colony Forming Unit\" is a C.G.S System unit for  'Microbial Formation' expressed as $CFU$."^^rdf:HTML ;
+  qudt:hasQuantityKind quantitykind:MicrobialFormation ;
+  qudt:symbol "CFU" ;
+  qudt:ucumCaseInsensitiveCode "[CFU]"^^qudt:UCUMci-term ;
+  qudt:ucumCode "[CFU]"^^qudt:UCUMci-term ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/life-sciences> ;
+  rdfs:isDefinedBy unit:life-sciences ;
+  rdfs:label "Colony Forming Unit" ;
+  skos:exactMatch <http://dbpedia.org/resource/Colony-forming_unit> ;
+  skos:prefLabel "colony-forming-unit" ;
+  prov:wasInfluencedBy <http://en.wikipedia.org/wiki/Colony-forming_unit?oldid=473146689> ;
+.
+unit:IU-PER-L
+  a qudt:CGS-Unit ;
+  a qudt:DerivedUnit ;
+  a qudt:SerumOrPlasmaLevelUnit ;
+  a qudt:Unit ;
+  qudt:abbreviation "IU/L" ;
+  qudt:code "2515" ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "\"International Unit per Liter\" is a C.G.S System unit for  'Serum Or Plasma Level' expressed as $IU/L$."^^rdf:HTML ;
+  qudt:hasQuantityKind quantitykind:SerumOrPlasmaLevel ;
+  qudt:symbol "IU/L" ;
+  qudt:ucumCaseInsensitiveCode "[IU].L-1"^^qudt:UCUMci-term ;
+  qudt:ucumCaseInsensitiveCode "[IU]/L"^^qudt:UCUMci-term ;
+  qudt:ucumCaseInsensitiveCode "[iU].l-1"^^qudt:UCUMcs-term ;
+  qudt:ucumCaseInsensitiveCode "[iU]/l"^^qudt:UCUMcs-term ;
+  qudt:ucumCode "[IU].L-1"^^qudt:UCUMci-term ;
+  qudt:ucumCode "[IU]/L"^^qudt:UCUMci-term ;
+  qudt:ucumCode "[iU].l-1"^^qudt:UCUMcs-term ;
+  qudt:ucumCode "[iU]/l"^^qudt:UCUMcs-term ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/life-sciences> ;
+  rdfs:isDefinedBy unit:life-sciences ;
+  rdfs:label "International Unit per Liter" ;
+  skos:prefLabel "international-unit-per-liter" ;
+.
+voag:QUDT-UNITS-VocabCatalogEntry
+  a vaem:CatalogEntry ;
+  rdfs:label "QUDT UNITS Vocab Catalog Entry" ;
+.
+voag:hasCatalogEntry
+  a owl:ObjectProperty ;
+  rdfs:label "has catalog entry" ;
+.
+voag:hasLicenseType
+  a owl:ObjectProperty ;
+  rdfs:label "has license type"@en-US ;
+.
+voag:withAttributionTo
+  a owl:ObjectProperty ;
+  rdfs:label "with attribution to" ;
+.
+vaem:GMD_QUDT-UNITS-LIFE-SCIENCES
+  a vaem:GraphMetaData ;
+  dct:author "Ralph Hodgson" ;
+  dct:contributor "Jack Hodges" ;
+  dct:contributor "Steve Ray" ;
+  dct:created "2016-07-04"^^xsd:date ;
+  dct:creator "Ralph Hodgson" ;
+  dct:description "Life Sciences Units Ontology Version 2.0" ;
+  dct:modified "2019-05-30"^^xsd:date ;
+  dct:rights "The QUDT Ontologies are issued under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0), available at https://creativecommons.org/licenses/by-sa/4.0/. Attribution should be made to QUDT.org" ;
+  dct:subject "Units-Life-Sciences" ;
+  vaem:description "The QUDT SI Units Vocabulary is an RDF/OWL specifications of common units of measure in the science and engineering domains. All SI Units are included. Links, where possible, have been made to dbpedia using 'skos:closeMatch' and 'skos:exactMatch'." ;
+  vaem:hasGraphRole vaem:VocabularyGraph ;
+  vaem:hasLicenseType voag:CC-SHAREALIKE_3PT0-US ;
+  vaem:hasOwner vaem:QUDT ;
+  vaem:hasSteward vaem:QUDT ;
+  vaem:intent "The intent of this graph is the specification of life sciences units." ;
+  vaem:isMetadataFor <http://qudt.org/2.0/vocab/unit/life-sciences> ;
+  vaem:logo "http://www.linkedmodel.org/lib/lm/images/logos/qudt_logo-300x110.png"^^xsd:anyURI ;
+  vaem:name "qudt" ;
+  vaem:namespace "http://qudt.org/vocab/unit/" ;
+  vaem:namespacePrefix "unit" ;
+  vaem:owner "qudt.org" ;
+  vaem:previousPublishedVersion "http://www.qudt.org/doc/2016/DOC_vocab-units-life-sciences"^^xsd:anyURI ;
+  vaem:rdfxmlFileURL "http://qudt.org/2.0/vocab/VOCAB_qudt-units-life-sciences-v2.0.rdf"^^xsd:anyURI ;
+  vaem:revision "2.0" ;
+  vaem:title "Life Sciences Units Ontology Version 2.0" ;
+  vaem:turtleFileURL "http://qudt.org/2.0/vocab/VOCAB_qudt-units-life-sciences-v2.0.ttl"^^xsd:anyURI ;
+  vaem:usesNonImportedResource dct:abstract ;
+  vaem:usesNonImportedResource dct:author ;
+  vaem:usesNonImportedResource dct:contributor ;
+  vaem:usesNonImportedResource dct:created ;
+  vaem:usesNonImportedResource dct:description ;
+  vaem:usesNonImportedResource dct:modified ;
+  vaem:usesNonImportedResource dct:rights ;
+  vaem:usesNonImportedResource dct:source ;
+  vaem:usesNonImportedResource dct:subject ;
+  vaem:usesNonImportedResource dct:title ;
+  vaem:usesNonImportedResource voag:QUDT-Attribution ;
+  vaem:usesNonImportedResource <http://voag.linkedmodel.org/voag/CC-SHAREALIKE_3PT0-US> ;
+  vaem:usesNonImportedResource skos:closeMatch ;
+  vaem:usesNonImportedResource skos:exactMatch ;
+  vaem:usesNonImportedResource prov:wasInfluencedBy ;
+  vaem:withAttributionTo voag:QUDT-Attribution ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/life-sciences> ;
+  rdfs:isDefinedBy unit:life-sciences ;
+  rdfs:label "Life Sciences Units Ontology Metadata Version 2.0" ;
+  owl:versionIRI <http://qudt.org/2.0/vocab/unit/life-sciences> ;
+.
+skos:closeMatch
+  a rdf:Property ;
+.
+skos:exactMatch
+  a rdf:Property ;
+.
